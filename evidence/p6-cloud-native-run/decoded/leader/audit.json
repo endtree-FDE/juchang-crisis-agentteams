@@ -1,0 +1,168 @@
+{
+  "schema": "juchang-dsh-authority-audit@1",
+  "projectId": "cloud-crisis-2014-east-art-center-p6",
+  "events": [
+    {
+      "sequence": 1,
+      "at": "2026-09-03T06:23:55.028Z",
+      "operation": "create_project",
+      "success": true
+    },
+    {
+      "sequence": 2,
+      "at": "2026-09-03T06:23:55.115Z",
+      "operation": "plan_dag",
+      "success": true
+    },
+    {
+      "sequence": 3,
+      "at": "2026-09-03T06:23:55.389Z",
+      "operation": "delegate_task",
+      "taskId": "cloud-crisis-2014-east-art-center-p6-01",
+      "success": true,
+      "eventId": "$Yl-7SKNnPKbp5LWqcFCzyhGMUY7O0sJSbZ-TtVHvtk4"
+    },
+    {
+      "sequence": 4,
+      "at": "2026-09-03T06:25:29.829Z",
+      "operation": "check_task",
+      "taskId": "cloud-crisis-2014-east-art-center-p6-01",
+      "success": true,
+      "effective": true
+    },
+    {
+      "sequence": 5,
+      "at": "2026-09-03T06:25:29.918Z",
+      "operation": "accept_task_result",
+      "taskId": "cloud-crisis-2014-east-art-center-p6-01",
+      "success": true,
+      "status": "completed"
+    },
+    {
+      "sequence": 6,
+      "at": "2026-09-03T06:25:29.952Z",
+      "operation": "task_terminal_observed",
+      "taskId": "cloud-crisis-2014-east-art-center-p6-01",
+      "success": true,
+      "status": "completed"
+    },
+    {
+      "sequence": 7,
+      "at": "2026-09-03T06:25:30.207Z",
+      "operation": "delegate_task",
+      "taskId": "cloud-crisis-2014-east-art-center-p6-02",
+      "success": true,
+      "eventId": "$iUsjMKrmyS4bVDVnhso2yT-HXmLsTa27dmMpVyho6ns"
+    },
+    {
+      "sequence": 8,
+      "at": "2026-09-03T06:25:30.474Z",
+      "operation": "delegate_task",
+      "taskId": "cloud-crisis-2014-east-art-center-p6-03",
+      "success": true,
+      "eventId": "$4ukgomjfSXwrfDottTvVJ4lw1bDbxwx2Qpfn6_HQmgk"
+    },
+    {
+      "sequence": 9,
+      "at": "2026-09-03T06:25:55.241Z",
+      "operation": "check_task",
+      "taskId": "cloud-crisis-2014-east-art-center-p6-02",
+      "success": true,
+      "effective": true
+    },
+    {
+      "sequence": 10,
+      "at": "2026-09-03T06:25:55.327Z",
+      "operation": "accept_task_result",
+      "taskId": "cloud-crisis-2014-east-art-center-p6-02",
+      "success": true,
+      "status": "completed"
+    },
+    {
+      "sequence": 11,
+      "at": "2026-09-03T06:25:55.359Z",
+      "operation": "task_terminal_observed",
+      "taskId": "cloud-crisis-2014-east-art-center-p6-02",
+      "success": true,
+      "status": "completed"
+    },
+    {
+      "sequence": 12,
+      "at": "2026-09-03T06:25:55.477Z",
+      "operation": "delegate_task",
+      "taskId": "cloud-crisis-2014-east-art-center-p6-03",
+      "success": true,
+      "eventId": "$4ukgomjfSXwrfDottTvVJ4lw1bDbxwx2Qpfn6_HQmgk"
+    },
+    {
+      "sequence": 13,
+      "at": "2026-09-03T06:26:42.490Z",
+      "operation": "check_task",
+      "taskId": "cloud-crisis-2014-east-art-center-p6-03",
+      "success": true,
+      "effective": true
+    },
+    {
+      "sequence": 14,
+      "at": "2026-09-03T06:26:42.576Z",
+      "operation": "accept_task_result",
+      "taskId": "cloud-crisis-2014-east-art-center-p6-03",
+      "success": true,
+      "status": "completed"
+    },
+    {
+      "sequence": 15,
+      "at": "2026-09-03T06:26:42.606Z",
+      "operation": "task_terminal_observed",
+      "taskId": "cloud-crisis-2014-east-art-center-p6-03",
+      "success": true,
+      "status": "completed"
+    },
+    {
+      "sequence": 16,
+      "at": "2026-09-03T06:26:42.828Z",
+      "operation": "delegate_task",
+      "taskId": "cloud-crisis-2014-east-art-center-p6-04",
+      "success": true,
+      "eventId": "$zzaAsBXoSd7sB5k0szbfwtMbKOlMmR73oAJNpj46MXU"
+    },
+    {
+      "sequence": 17,
+      "at": "2026-09-03T06:28:56.464Z",
+      "operation": "check_task",
+      "taskId": "cloud-crisis-2014-east-art-center-p6-04",
+      "success": true,
+      "effective": true
+    },
+    {
+      "sequence": 18,
+      "at": "2026-09-03T06:28:56.549Z",
+      "operation": "accept_task_result",
+      "taskId": "cloud-crisis-2014-east-art-center-p6-04",
+      "success": true,
+      "status": "completed"
+    },
+    {
+      "sequence": 19,
+      "at": "2026-09-03T06:28:56.578Z",
+      "operation": "task_terminal_observed",
+      "taskId": "cloud-crisis-2014-east-art-center-p6-04",
+      "success": true,
+      "status": "completed"
+    },
+    {
+      "sequence": 20,
+      "at": "2026-09-03T06:29:28.097Z",
+      "operation": "complete_project",
+      "success": true,
+      "status": "completed"
+    },
+    {
+      "sequence": 21,
+      "at": "2026-09-03T06:29:28.128Z",
+      "operation": "project_terminal_observed",
+      "success": true,
+      "status": "completed"
+    }
+  ]
+}

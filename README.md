@@ -25,7 +25,7 @@ npm test
 - `scripts/crisis-sim/skills/artist-substitution-feasibility/` — 真实 Skill 包（SKILL.md + 确定性核对器 + 权限清单）
 - `scripts/crisis-sim/export-verified-replay.mjs` — 回放导出器（拒绝任何非真实运行输入）
 - `evidence/` — 真实 Live Agent Run 证据（验收链、回执、决策包）
-- `docs/gap-analysis.md` — 复赛规则逐条对照分析
+- `evidence/` — 真实运行证据：本地预验证（p1b，含真实 Skill 调用 trace）+ **云端原生 AgentTeams 完整闭环（p6，`evidence/p6-cloud-native-run/`，四岗回执 + 审计链 + Skill 记录 + 哈希校验）**
 
 ## 安全边界
 

@@ -1,0 +1,79 @@
+{
+  "edges": [
+    {
+      "conditional": false,
+      "source": "cloud-crisis-2014-east-art-center-p6-01",
+      "target": "cloud-crisis-2014-east-art-center-p6-02"
+    },
+    {
+      "conditional": false,
+      "source": "cloud-crisis-2014-east-art-center-p6-01",
+      "target": "cloud-crisis-2014-east-art-center-p6-03"
+    },
+    {
+      "conditional": false,
+      "source": "cloud-crisis-2014-east-art-center-p6-02",
+      "target": "cloud-crisis-2014-east-art-center-p6-04"
+    },
+    {
+      "conditional": false,
+      "source": "cloud-crisis-2014-east-art-center-p6-03",
+      "target": "cloud-crisis-2014-east-art-center-p6-04"
+    }
+  ],
+  "interrupts": [],
+  "mode": "",
+  "next": [],
+  "nodes": [
+    {
+      "assignee": "@juchang-v14-material-intake:matrix-local.agentteams.io:18080",
+      "id": "cloud-crisis-2014-east-art-center-p6-01",
+      "name": "现场事实与时间线",
+      "status": "completed"
+    },
+    {
+      "assignee": "@juchang-v14-evidence-guard:matrix-local.agentteams.io:18080",
+      "id": "cloud-crisis-2014-east-art-center-p6-02",
+      "name": "方案约束与艺术可行性",
+      "status": "completed"
+    },
+    {
+      "assignee": "@juchang-v14-entity-matcher:matrix-local.agentteams.io:18080",
+      "id": "cloud-crisis-2014-east-art-center-p6-03",
+      "name": "资源关系合同与授权",
+      "status": "completed"
+    },
+    {
+      "assignee": "@juchang-v14-approval-guard:matrix-local.agentteams.io:18080",
+      "id": "cloud-crisis-2014-east-art-center-p6-04",
+      "name": "观众沟通与执行门禁",
+      "status": "completed"
+    }
+  ],
+  "plan_type": "dag",
+  "project_id": "cloud-crisis-2014-east-art-center-p6",
+  "requester": "@juchang-v14-lead:matrix-local.agentteams.io:18080",
+  "requester_report": {
+    "pending": true,
+    "reason": "task_result_accepted",
+    "report_path": "shared/projects/cloud-crisis-2014-east-art-center-p6/result.md",
+    "result_status": "SUCCESS_WITH_NOTES",
+    "summary": "approval_guard produced a zero-write DSH receipt for Leader review (HUMAN_REVIEW).",
+    "task_id": "cloud-crisis-2014-east-art-center-p6-04"
+  },
+  "source": "juchang-editor",
+  "status": "completed",
+  "team_id": "",
+  "title": "2014·3·15 东艺演出危机反事实推演（云端权威运行）",
+  "values": {
+    "mode": "",
+    "plan_type": "dag",
+    "project_id": "cloud-crisis-2014-east-art-center-p6",
+    "status": "completed",
+    "task_count": {
+      "completed": 4
+    },
+    "team_id": "",
+    "title": "2014·3·15 东艺演出危机反事实推演（云端权威运行）"
+  }
+}

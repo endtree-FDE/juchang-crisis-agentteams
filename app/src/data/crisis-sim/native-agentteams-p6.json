@@ -1,0 +1,348 @@
+{
+  "schema": "juchang-crisis-native-replay@1",
+  "replayId": "cloud-crisis-2014-east-art-center-p6",
+  "presetId": "2014-east-art-center",
+  "readonly": true,
+  "frozenAt": "2026-09-03T06:39:35.560Z",
+  "disclosure": "这是本次云端执行的只读归档，不是实时运行。历史事件未使用 AgentTeams；历史材料、口述与模拟条件仍需分层核对。以下保留 Agent 输出，不代表历史事实或业务方案已获批准。",
+  "source": {
+    "kind": "native_agentteams_archive",
+    "evaluatorState": "native_terminal_verified",
+    "dispatchProvided": true
+  },
+  "validation": {
+    "state": "ready_for_human_review",
+    "issueCount": 0,
+    "counters": {
+      "productionWrites": 0,
+      "publicPublishes": 0,
+      "realRefunds": 0,
+      "externalMessages": 0
+    }
+  },
+  "qualityReview": {
+    "status": "needs_revision",
+    "summary": "执行已完成，内容仍需修订：替补方案比较不完整，模拟条件未充分用于推演，闭源库权限读取缺少本轮证据。"
+  },
+  "digests": {
+    "rawExportSha256": "354a7f90062c0da6f2ec7c27cffb2a07e86d9250b5696aebffb70e555cfbaaff",
+    "requestSha256": "f8861684a9a1a2adf4d2bbf4d2ac22170cfba50524822c678eee1a81b168a97b",
+    "receiptSha256": "2716e65b1a3dca3422b7d393ef383059330290f13e99a11becd91c18c7fe958f",
+    "resultSha256": "4d0bbf02a3627d94dfeca0ac22a8142c6e411047fc9a31884a961591f18765c6",
+    "auditSha256": "595a56e9ac3de88b8edbccd4d83c5deb0ed345a57e5fbd3cf1a1eec5826e462b",
+    "worker01ReceiptSha256": "5508b0c41b7b29a9d4cc84f1439e0b3965b1b00b965691c7eff8a3110bcbd7c6",
+    "worker02ReceiptSha256": "9fbec63502c5d0870a5139272d2ca35c34775156f31c701c6f31181a34121f3c",
+    "worker03ReceiptSha256": "0571ed5af87bfb74948029d4dce1b440325f047700640b82db077165c83b28af",
+    "worker04ReceiptSha256": "906d56fcdcd6b42c2cdebc3f486dc5313a82e3748ec10a09ed55fec9e4787f6c"
+  },
+  "replay": {
+    "provenance": {
+      "runtime": "agentteams-dsh-cloud",
+      "cloudstudio": true,
+      "statement": "来自 CloudStudio 原生四岗与 Leader 的实际执行。原始字节、任务验收、Skill 事件链及构建快照已校验；没有把本地 DSH 预验证改称云端运行。"
+    },
+    "receipt": {
+      "schema": "juchang-native-run-display@1",
+      "workers": [
+        {
+          "taskId": "cloud-crisis-2014-east-art-center-p6-01",
+          "role": "material_intake",
+          "status": "completed",
+          "summary": "本次输入是一份明确标注为\"反事实复盘\"（历史事件脱敏冻结投影 + 合成虚拟闭源库，零真实写入）的演练包，并非运营意义上的新活动通知或变更指令。文章发布日期不能冒充活动日期，本次材料中的 timeline 字段也不能直接等同于实际演出时间线。已确认的核心事实包括：钢琴家尼尔森·弗雷尔当晚因突发严重身体不适无法演出，受影响曲目为贝多芬《第五钢琴协奏曲〈皇帝〉》，多方来源支持演出结束后一个月内凭票退还票面金额 50% 的历史结果。但仍有三处关键障碍阻止材料进入正式记录：第一，医疗休息时长存在 20 小时与 24 小时的口述证词冲突，仅能安全确认医生禁止当晚登台，具体小时数不可发布；第二，转播范围来源（xinmin-20140316）及证词记录在 workspace 中不可独立核实，当前状态为部分验证；第三，材料本身是否为封闭演练包或允许摄入生产环境尚无明确说明，在未确认前不应触发任何 ticket 或客服系统写入。卡瓦科斯替补方案、马勒补演方案均注明需艺术家本人、经纪及指挥乐团多方批准，目前均未具名授权。下一步由资料贡献方（contributor）补充上述三项，并由上海东方艺术中心具名经济授权人对任何 50% 退款执行动作作出书面批准。",
+          "detailText": "事实条目（Agent 输出，须结合证据核对）\n\n{\n  \"field\": \"incident.pianist_status\",\n  \"value\": \"尼尔森·弗雷尔突发严重身体不适，无法参加 2014-03-15 晚场演出\",\n  \"evidenceRefs\": [\n    \"call-transcript-20260902#05:21-05:48\",\n    \"xinmin-20140316\",\n    \"people-20140319\"\n  ]\n}\n\n{\n  \"field\": \"program.affected_work\",\n  \"value\": \"贝多芬《第五钢琴协奏曲〈皇帝〉》\",\n  \"evidenceRefs\": [\n    \"call-transcript-20260902#03:12-03:29\",\n    \"people-20140319\"\n  ]\n}\n\n{\n  \"field\": \"program.affected_duration_minutes\",\n  \"value\": \"42 分钟（口述证词，独立来源未在 workspace 核实）\",\n  \"evidenceRefs\": [\n    \"call-transcript-20260902#08:26-08:42\"\n  ]\n}\n\n{\n  \"field\": \"incident.broadcast_scope\",\n  \"value\": \"全国多地高清转播、欧洲网络传播及北京上海电台直播（部分验证，原文未核实）\",\n  \"evidenceRefs\": [\n    \"call-transcript-20260902#05:58-08:14\",\n    \"xinmin-20140316\"\n  ]\n}\n\n{\n  \"field\": \"historicalOutcome.refund\",\n  \"value\": \"演出结束后一个月内凭票退还票面金额 50%（多方来源支持）\",\n  \"evidenceRefs\": [\n    \"call-transcript-20260902#21:54-23:07\",\n    \"people-20140319\"\n  ]\n}\n\n{\n  \"field\": \"soloist\",\n  \"value\": \"尼尔森·弗雷尔\",\n  \"evidenceRefs\": [\n    \"INPUT stakeholders[2].label (pianist)\"\n  ]\n}\n\n{\n  \"field\": \"orchestra\",\n  \"value\": \"莱比锡布商大厦管弦乐团\",\n  \"evidenceRefs\": [\n    \"INPUT stakeholders[1].label (orchestra)\"\n  ]\n}\n\n{\n  \"field\": \"conductor\",\n  \"value\": \"里卡多·夏伊\",\n  \"evidenceRefs\": [\n    \"INPUT stakeholders[3].label (conductor)\"\n  ]\n}\n\n{\n  \"field\": \"presenter\",\n  \"value\": \"上海东方艺术中心（场地、主办方、观众责任方）\",\n  \"evidenceRefs\": [\n    \"INPUT stakeholders[0].label (east-art-center)\"\n  ]\n}\n\n{\n  \"field\": \"deadline.dl-curtain\",\n  \"value\": \"2014-03-15 19:30（来源：contemporary_report，置信度：高）\",\n  \"evidenceRefs\": [\n    \"INPUT incident.deadlines[3].at\"\n  ]\n}\n\n{\n  \"field\": \"deadline.dl-substitute-decision\",\n  \"value\": \"2014-03-15 17:00（来源：oral_testimony_projection，置信度：中，需进一步核实）\",\n  \"evidenceRefs\": [\n    \"INPUT incident.deadlines[0].at\"\n  ]\n}\n\n{\n  \"field\": \"material_nature\",\n  \"value\": \"历史事件反事实演练脱敏包，零真实写入；来源包含合成数据（simulated_injection_for_eval）\",\n  \"evidenceRefs\": [\n    \"INPUT note: '历史事件反事实演练 · 脱敏冻结投影 + 合成虚拟闭源库 · 零真实写入'\",\n    \"INPUT lateArrivalFacts[0].synthetic: true\"\n  ]\n}\n\n\n冲突\n\n{\n  \"content\": \"医疗休息时长口述证数值冲突：call-transcript-20260902 为 20 小时，people-20140319 为 24 小时，两者均标记为 dataClass: oral_testimony，无医师书面证明作为仲裁来源。\",\n  \"severity\": \"high\",\n  \"evidenceRefs\": [\n    \"call-transcript-20260902#05:31-05:45\",\n    \"people-20140319\"\n  ],\n  \"businessImpact\": \"影响对替补艺术家通知时间窗口及退款时效依据的估算；任何基于单一数值的业务决策均可能失误。\"\n}\n\n{\n  \"content\": \"替补决定截止时间（dl-substitute-decision）来源为 oral_testimony_projection，置信度 medium；对应通知时间（dl-doors 18:30、dl-broadcast-lock 18:45）来源为 synthetic_venue_procedure，置信度 assumed，均非正式场馆文件。\",\n  \"severity\": \"medium\",\n  \"evidenceRefs\": [\n    \"INPUT incident.deadlines[0]\",\n    \"INPUT incident.deadlines[1]\",\n    \"INPUT incident.deadlines[2]\"\n  ],\n  \"businessImpact\": \"操作截止时间不可靠，若依赖该时间线组织行动存在错过真实窗口的风险。\"\n}\n\n{\n  \"content\": \"转播范围（broadcast_scope）标记为 partially_verified；xinmin-20140316 和 call-transcript-20260902 被引用，但两者均未在 workspace 中以可核实原文形式提供。\",\n  \"severity\": \"medium\",\n  \"evidenceRefs\": [\n    \"xinmin-20140316\",\n    \"call-transcript-20260902\"\n  ],\n  \"businessImpact\": \"客服对外口径、观众数量估算及多地通知范围的业务计划均缺少独立核实基础。\"\n}\n\n{\n  \"content\": \"乐团书面确认项（late-orchestra-written-confirm）明确标记 dataClass: simulated，source: simulated_injection_for_eval，synthetic: true，不可作为真实业务证据使用。\",\n  \"severity\": \"high\",\n  \"evidenceRefs\": [\n    \"INPUT lateArrivalFacts[0]\"\n  ],\n  \"businessImpact\": \"若误将该项纳入合排条件判断，将导致程序性误判，可能错过真实截止时间。\"\n}\n\n\n待确认项\n\nincident.medical_rest_duration_hours — 真实休息小时数仍有 20h/24h 冲突，需医师证明或第三方医疗文件确认\n\nincident.broadcast_scope — 缺少 xinmin-20140316 及 call-transcript-20260902 的原文，无法独立核实全国高清转播及欧洲网络传播的真实范围\n\ndeadline.dl-substitute-decision — 来源置信度 medium，缺少正式场馆程序文件支撑\n\ndeadline.dl-doors — 来源 synthetic_venue_procedure，置信度 assumed，无原始文件\n\ndeadline.dl-broadcast-lock — 同上，无法核实是否存在 18:45 信号锁定操作\n\npublic_participation — 原始来源未确认观众实际到场率或直播参与边界，仅标记 uncertain\n\n\n下一步\n\n贡献方（contributor）须补充：(1) xinmin-20140316 及 call-transcript-20260902 可核实原文，以确认转播范围与退款依据；(2) 提供医师书面证明或第三方医疗文件，解决 20 小时与 24 小时的休息时长冲突；(3) 核实或替换替补决定截止时间（17:00）的正式来源；(4) 明确本材料是否为封闭演练包（当前默认不进入生产）。任何 50% 退款执行须由上海东方艺术中心具名经济授权人书面批准；任何节目变更须由指挥里卡多·夏伊及莱比锡布商大厦管弦乐团书面认可。\n\n\n业务影响\n\n{\n  \"area\": \"event\",\n  \"status\": \"unknown\",\n  \"explanation\": \"本轮收据没有提供足以支持业务动作的影响结论，保持未知。\"\n}\n\n{\n  \"area\": \"ticketing\",\n  \"status\": \"unknown\",\n  \"explanation\": \"本轮收据没有提供足以支持业务动作的影响结论，保持未知。\"\n}\n\n{\n  \"area\": \"customer_service\",\n  \"status\": \"unknown\",\n  \"explanation\": \"本轮收据没有提供足以支持业务动作的影响结论，保持未知。\"\n}\n\n{\n  \"area\": \"notification\",\n  \"status\": \"unknown\",\n  \"explanation\": \"本轮收据没有提供足以支持业务动作的影响结论，保持未知。\"\n}\n\n{\n  \"area\": \"knowledge_base\",\n  \"status\": \"unknown\",\n  \"explanation\": \"本轮收据没有提供足以支持业务动作的影响结论，保持未知。\"\n}"
+        },
+        {
+          "taskId": "cloud-crisis-2014-east-art-center-p6-02",
+          "role": "evidence_guard",
+          "status": "completed",
+          "summary": "本轮材料仍为反事实复盘脱敏包，含合成数据注入项，零真实写入。已确认：钢琴家尼尔森·弗雷尔因突发严重身体不适无法参加 2014-03-15 晚场演出，受影响曲目为贝多芬《第五钢琴协奏曲〈皇帝〉》（时长 42 分钟，口述证词），历史结局为演出结束后一个月内凭票退还票面金额 50%（多方来源支持）。仍受阻原因：第一，医疗休息时长存在 20 小时与 24 小时的口述证词冲突，无法确认弗雷尔何时开始休息，影响替补艺术家通知时间窗口估算及退款时效依据；第二，替补决定截止时间（17:00）来源为 oral_testimony_projection（置信度 medium），观众入场（18:30）与直播信号锁定（18:45）均来自 synthetic_venue_procedure（置信度 assumed），无正式场馆文件支撑，操作截止时间不可靠；第三，转播范围标记为 partially_verified，xinmin-20140316 及 call-transcript-20260902 原文在 workspace 中不可独立核实，客服口径与多地通知范围均缺少核实基础；第四，输入的 lateArrivalFacts[0] 明确标记 dataClass: simulated、synthetic: true，不得作为真实业务证据使用。业务影响：现场演出受影响，票务退票及客服口径需以核实后的转播范围为依据，知识库更新需等转播范围核实后由运营负责人最终确认。下一步由贡献方补充缺失来源原文，上海东方艺术中心具名经济授权人对任何 50% 退款执行动作作出书面批准，指挥里卡多·夏伊及莱比锡布商大厦管弦乐团对任何节目变更作出书面认可。",
+          "detailText": "事实条目（Agent 输出，须结合证据核对）\n\n{\n  \"field\": \"incident.pianist_status\",\n  \"value\": \"尼尔森·弗雷尔突发严重身体不适，无法参加 2014-03-15 晚场演出\",\n  \"evidenceRefs\": [\n    \"call-transcript-20260902#05:21-05:48\",\n    \"xinmin-20140316\",\n    \"people-20140319\"\n  ]\n}\n\n{\n  \"field\": \"program.affected_work\",\n  \"value\": \"贝多芬《第五钢琴协奏曲〈皇帝〉》\",\n  \"evidenceRefs\": [\n    \"call-transcript-20260902#03:12-03:29\",\n    \"people-20140319\"\n  ]\n}\n\n{\n  \"field\": \"program.affected_duration_minutes\",\n  \"value\": \"42 分钟（口述证词，独立来源未在 workspace 核实）\",\n  \"evidenceRefs\": [\n    \"call-transcript-20260902#08:26-08:42\"\n  ]\n}\n\n{\n  \"field\": \"incident.broadcast_scope\",\n  \"value\": \"全国多地高清转播、欧洲网络传播及北京上海电台直播（部分验证，原文未核实）\",\n  \"evidenceRefs\": [\n    \"call-transcript-20260902#05:58-08:14\",\n    \"xinmin-20140316\"\n  ]\n}\n\n{\n  \"field\": \"historicalOutcome.refund\",\n  \"value\": \"演出结束后一个月内凭票退还票面金额 50%（多方来源支持）\",\n  \"evidenceRefs\": [\n    \"call-transcript-20260902#21:54-23:07\",\n    \"people-20140319\"\n  ]\n}\n\n{\n  \"field\": \"orchestra\",\n  \"value\": \"莱比锡布商大厦管弦乐团\",\n  \"evidenceRefs\": [\n    \"INPUT stakeholders[1].label\"\n  ]\n}\n\n{\n  \"field\": \"conductor\",\n  \"value\": \"里卡多·夏伊\",\n  \"evidenceRefs\": [\n    \"INPUT stakeholders[3].label\"\n  ]\n}\n\n{\n  \"field\": \"presenter\",\n  \"value\": \"上海东方艺术中心（场地、主办方、观众责任方）\",\n  \"evidenceRefs\": [\n    \"INPUT stakeholders[0].label\"\n  ]\n}\n\n{\n  \"field\": \"deadline.dl-curtain\",\n  \"value\": \"2014-03-15 19:30（来源：contemporary_report，置信度：高）\",\n  \"evidenceRefs\": [\n    \"INPUT incident.deadlines[3]\"\n  ]\n}\n\n{\n  \"field\": \"material_nature\",\n  \"value\": \"历史事件反事实演练脱敏包，含合成数据注入项（lateArrivalFacts[0] synthetic: true），零真实写入\",\n  \"evidenceRefs\": [\n    \"INPUT note\",\n    \"INPUT lateArrivalFacts[0].synthetic\"\n  ]\n}\n\n{\n  \"field\": \"option-find-pianist-substitute.status\",\n  \"value\": \"not_authorized，需替补钢琴家本人及经纪书面确认\",\n  \"evidenceRefs\": [\n    \"INPUT options[0].agentDecision\",\n    \"INPUT options[0].requiredHumanApprovals\"\n  ]\n}\n\n{\n  \"field\": \"option-shortened-program-half-refund.status\",\n  \"value\": \"prepare_only，需上海东方艺术中心具名经济授权人书面批准\",\n  \"evidenceRefs\": [\n    \"INPUT options[3].agentDecision\",\n    \"INPUT options[3].requiredHumanApprovals\"\n  ]\n}\n\n\n冲突\n\n{\n  \"content\": \"医疗休息时长口述证词冲突：call-transcript-20260902 记录为 20 小时，people-20140319 记录为 24 小时，两者均为 dataClass: oral_testimony，无医师书面证明作为仲裁来源。\",\n  \"severity\": \"high\",\n  \"evidenceRefs\": [\n    \"call-transcript-20260902#05:31-05:45\",\n    \"people-20140319\"\n  ],\n  \"businessImpact\": \"影响替补艺术家通知时间窗口估算及退款时效依据；任何基于单一数值的业务决策均可能失误。\"\n}\n\n{\n  \"content\": \"替补决定截止时间（dl-substitute-decision，17:00）来源为 oral_testimony_projection（置信度 medium），观众入场（18:30）与直播信号锁定（18:45）来源为 synthetic_venue_procedure（置信度 assumed），均无正式场馆文件支撑。\",\n  \"severity\": \"medium\",\n  \"evidenceRefs\": [\n    \"INPUT incident.deadlines[0]\",\n    \"INPUT incident.deadlines[1]\",\n    \"INPUT incident.deadlines[2]\"\n  ],\n  \"businessImpact\": \"操作截止时间不可靠，若依赖该时间线组织行动存在错过真实窗口的风险。\"\n}\n\n{\n  \"content\": \"转播范围（broadcast_scope）标记为 partially_verified；xinmin-20140316 及 call-transcript-20260902 被引用但原文在 workspace 中不可独立核实。\",\n  \"severity\": \"medium\",\n  \"evidenceRefs\": [\n    \"xinmin-20140316\",\n    \"call-transcript-20260902\"\n  ],\n  \"businessImpact\": \"客服对外口径、观众数量估算及多地通知范围的业务计划均缺少独立核实基础。\"\n}\n\n{\n  \"content\": \"乐团书面确认项（lateArrivalFacts[0]）明确标记 dataClass: simulated、source: simulated_injection_for_eval、synthetic: true，不可作为真实业务证据使用。\",\n  \"severity\": \"high\",\n  \"evidenceRefs\": [\n    \"INPUT lateArrivalFacts[0]\"\n  ],\n  \"businessImpact\": \"若误将该项纳入合排条件判断，将导致程序性误判，可能错过真实截止时间。\"\n}\n\n\n待确认项\n\nincident.medical_rest_duration_hours — 真实休息小时数仍有 20h/24h 冲突，需医师证明或第三方医疗文件确认\n\nincident.broadcast_scope — 缺少 xinmin-20140316 及 call-transcript-20260902 原文，无法独立核实全国高清转播及欧洲网络传播的真实范围\n\ndeadline.dl-substitute-decision — 来源置信度 medium，缺少正式场馆程序文件支撑\n\ndeadline.dl-doors — 来源 synthetic_venue_procedure，置信度 assumed，无原始文件\n\ndeadline.dl-broadcast-lock — 同上，无法核实是否存在 18:45 信号锁定操作\n\npublic_participation — 原始来源未确认观众实际到场率或直播参与边界，仅标记 uncertain\n\n\n下一步\n\n贡献方（contributor）须补充：(1) xinmin-20140316 及 call-transcript-20260902 可核实原文，以确认转播范围与退款依据；(2) 提供医师书面证明或第三方医疗文件，解决 20 小时与 24 小时的休息时长冲突；(3) 核实或替换替补决定截止时间（17:00）及入场/直播截止时间的正式来源；(4) 明确本材料是否为封闭演练包（当前默认不进入生产）。任何 50% 退款执行须由上海东方艺术中心具名经济授权人书面批准；任何节目变更须由指挥里卡多·夏伊及莱比锡布商大厦管弦乐团书面认可。\n\n\n业务影响\n\n{\n  \"area\": \"event\",\n  \"status\": \"unknown\",\n  \"explanation\": \"材料来源冲突与合成数据项尚未解决，无法确认演出受影响程度及替代方案可行性，业务影响保持未知。\"\n}\n\n{\n  \"area\": \"ticketing\",\n  \"status\": \"unknown\",\n  \"explanation\": \"退款执行依据为多方来源支持，但转播范围未核实，实际观众数量与票务退票规模仍无法确认。\"\n}\n\n{\n  \"area\": \"customer_service\",\n  \"status\": \"unknown\",\n  \"explanation\": \"客服对外口径依赖核实后的转播范围，当前部分验证状态不足以支撑对外说明。\"\n}\n\n{\n  \"area\": \"notification\",\n  \"status\": \"unknown\",\n  \"explanation\": \"操作截止时间来源置信度不足，通知节奏与广播范围无法可靠规划。\"\n}\n\n{\n  \"area\": \"knowledge_base\",\n  \"status\": \"unknown\",\n  \"explanation\": \"材料含合成数据，原文不可独立核实，在核实来源前不得更新正式知识库。\"\n}"
+        },
+        {
+          "taskId": "cloud-crisis-2014-east-art-center-p6-03",
+          "role": "entity_matcher",
+          "status": "completed",
+          "summary": "本轮 INPUT 为反事实复盘演练包（脱敏冻结投影 + 合成虚拟闭源库，零真实写入），非真实运营指令。利益相关方层面：上海东方艺术中心、莱比锡布商大厦管弦乐团、尼尔森·弗雷尔、里卡多·夏伊、演出经纪公司、上海音乐厅、董事会与股东、现场与外地观众均已具名标注，彼此之间无重名问题，可唯一对应。但关键端点存在四项缺口：替补钢琴家身份在 stakeholders 中完全缺失且标记\"待具名\"；经纪公司虽有名称但无对应 stakeholderId（\"agency\"ID 无法通过名称自动确认等同）；卡瓦科斯本人及上海音乐厅许可状态均不在 stakeholders 中；董事会具名授权人权限状态标记为 requires_further_verification。截止时间层面：替补决定截止时间来源置信度仅 medium，缺少正式场馆程序文件；入场及直播信号锁定的来源为 synthetic_venue_procedure、置信度 assumed。事实冲突层面：医疗休息时长存在 20h/24h 口述证词冲突；转播范围来源在 workspace 不可独立核实；马勒补演方案因编制缺口不成立；模拟注入的乐团书面确认项不可用作业务证据。上述四项冲突叠加三项端点缺口，导致当前无法支撑任何业务执行动作。下一步：贡献方补充可核实原文；由上海东方艺术中心具名经济授权人对退款执行方案作出书面批准；替补钢琴家身份具名后方可启动批准路径。",
+          "detailText": "事实条目（Agent 输出，须结合证据核对）\n\n{\n  \"field\": \"incident.pianist_status\",\n  \"value\": \"尼尔森·弗雷尔突发严重身体不适，无法参加 2014-03-15 晚场演出\",\n  \"evidenceRefs\": [\n    \"call-transcript-20260902#05:21-05:48\",\n    \"xinmin-20140316\",\n    \"people-20140319\"\n  ]\n}\n\n{\n  \"field\": \"program.affected_work\",\n  \"value\": \"贝多芬《第五钢琴协奏曲〈皇帝〉》\",\n  \"evidenceRefs\": [\n    \"call-transcript-20260902#03:12-03:29\",\n    \"people-20140319\"\n  ]\n}\n\n{\n  \"field\": \"program.affected_duration_minutes\",\n  \"value\": \"42 分钟（口述证词，独立来源未在 workspace 核实）\",\n  \"evidenceRefs\": [\n    \"call-transcript-20260902#08:26-08:42\"\n  ]\n}\n\n{\n  \"field\": \"incident.broadcast_scope\",\n  \"value\": \"全国多地高清转播、欧洲网络传播及北京上海电台直播（部分验证，原文未在 workspace 核实）\",\n  \"evidenceRefs\": [\n    \"call-transcript-20260902#05:58-08:14\",\n    \"xinmin-20140316\"\n  ]\n}\n\n{\n  \"field\": \"historicalOutcome.refund\",\n  \"value\": \"演出结束后一个月内凭票退还票面金额 50%（多方来源支持）\",\n  \"evidenceRefs\": [\n    \"call-transcript-20260902#21:54-23:07\",\n    \"people-20140319\"\n  ]\n}\n\n{\n  \"field\": \"stakeholder_orchestra\",\n  \"value\": \"莱比锡布商大厦管弦乐团（表演方、声誉持有方、合同方）\",\n  \"evidenceRefs\": [\n    \"INPUT stakeholders[1].label\"\n  ]\n}\n\n{\n  \"field\": \"stakeholder_conductor\",\n  \"value\": \"里卡多·夏伊（艺术决策参与方、声誉持有方）\",\n  \"evidenceRefs\": [\n    \"INPUT stakeholders[3].label\"\n  ]\n}\n\n{\n  \"field\": \"stakeholder_presenter\",\n  \"value\": \"上海东方艺术中心（场地、主办方、观众责任方）\",\n  \"evidenceRefs\": [\n    \"INPUT stakeholders[0].label\"\n  ]\n}\n\n{\n  \"field\": \"deadline_curtain\",\n  \"value\": \"2014-03-15 19:30 开演（来源：contemporary_report，置信度：高）\",\n  \"evidenceRefs\": [\n    \"INPUT incident.deadlines[3]\"\n  ]\n}\n\n{\n  \"field\": \"deadline_substitute_decision\",\n  \"value\": \"2014-03-15 17:00 替补决定截止（来源：oral_testimony_projection，置信度：中）\",\n  \"evidenceRefs\": [\n    \"INPUT incident.deadlines[0]\"\n  ]\n}\n\n{\n  \"field\": \"material_nature\",\n  \"value\": \"历史事件反事实演练脱敏包，零真实写入；含合成注入数据\",\n  \"evidenceRefs\": [\n    \"INPUT note: '历史事件反事实演练 · 脱敏冻结投影 + 合成虚拟闭源库 · 零真实写入'\",\n    \"INPUT lateArrivalFacts[0].synthetic: true\"\n  ]\n}\n\n{\n  \"field\": \"stakeholder_board_authority\",\n  \"value\": \"董事会与股东（经济授权背景，权限状态 requires_further_verification）\",\n  \"evidenceRefs\": [\n    \"INPUT stakeholders[7].label\",\n    \"INPUT stakeholders[7].authorityStatus\"\n  ]\n}\n\n\n冲突\n\n{\n  \"content\": \"医疗休息时长口述证词数值冲突：call-transcript-20260902 记录约 20 小时，people-20140319 记录约 24 小时，两者均为 dataClass: oral_testimony，无医师书面证明作为仲裁来源，无法确认哪一数值准确。\",\n  \"severity\": \"high\",\n  \"evidenceRefs\": [\n    \"call-transcript-20260902#05:31-05:45\",\n    \"people-20140319\"\n  ],\n  \"businessImpact\": \"直接影响替补艺术家通知时间窗口估算及退款时效依据；任何基于单一数值的业务决策均存在失误风险。\"\n}\n\n{\n  \"content\": \"替补决定截止时间（dl-substitute-decision，17:00）来源为 oral_testimony_projection，置信度 medium；对应入场截止（18:30）和直播信号锁定（18:45）来源为 synthetic_venue_procedure，置信度 assumed，均非正式场馆文件。\",\n  \"severity\": \"medium\",\n  \"evidenceRefs\": [\n    \"INPUT incident.deadlines[0]\",\n    \"INPUT incident.deadlines[1]\",\n    \"INPUT incident.deadlines[2]\"\n  ],\n  \"businessImpact\": \"操作截止时间不可靠，若依赖该时间线组织行动存在错过真实窗口的风险；四个截止时间来源各异，置信度差异大，无统一程序文件支撑。\"\n}\n\n{\n  \"content\": \"董事会与股东权限状态：stakeholderId 'board' 的 authorityStatus 为 requires_further_verification，其批准是否具有法律效力、是否为具名授权人均未在 INPUT 中确认。\",\n  \"severity\": \"medium\",\n  \"evidenceRefs\": [\n    \"INPUT stakeholders[7].authorityStatus\"\n  ],\n  \"businessImpact\": \"退款执行及任何需要经济批准的业务动作均无法依赖董事会授权；approval-half-refund 路径缺少经济授权人具名批准。\"\n}\n\n{\n  \"content\": \"转播范围（incident.broadcast_scope）标记为 partially_verified；xinmin-20140316 及 call-transcript-20260902 被引用，但两者均未在 workspace 中以可核实原文形式提供，无法独立核实全国高清转播及欧洲网络传播的真实范围。\",\n  \"severity\": \"medium\",\n  \"evidenceRefs\": [\n    \"xinmin-20140316\",\n    \"call-transcript-20260902\"\n  ],\n  \"businessImpact\": \"客服对外口径、观众数量估算及多地通知范围的业务计划均缺少独立核实基础。\"\n}\n\n{\n  \"content\": \"马勒《第七交响曲》补演方案：已知前后两晚编制不同，缺少约二三十名乐手，无法在剩余时间内召回，方案本身不成立。\",\n  \"severity\": \"high\",\n  \"evidenceRefs\": [\n    \"INPUT options[2].knownBlockers[0]\"\n  ],\n  \"businessImpact\": \"该方案可直接排除，不应纳入当前决策考虑。\"\n}\n\n{\n  \"content\": \"模拟注入数据误用风险：lateArrivalFacts[0]（乐团书面确认项）dataClass 为 simulated，source 为 simulated_injection_for_eval，synthetic 为 true，不可作为真实业务证据使用，若误入程序性判断将导致误判。\",\n  \"severity\": \"high\",\n  \"evidenceRefs\": [\n    \"INPUT lateArrivalFacts[0]\"\n  ],\n  \"businessImpact\": \"该条信息不得纳入任何截止时间或合排条件的实际判断，否则将基于虚假证据作出错误操作安排。\"\n}\n\n\n待确认项\n\nstakeholderId 'agency' 对应的经纪公司具名身份及联系方式——approval-substitute-pianist-agency 所需批准方无法确认\n\n替补钢琴家身份——stakeholders 中无对应条目，option-find-pianist-substitute 标注'待具名'，所有依赖该身份的批准路径无法追踪\n\noption-kavakos-mendelssohn 所需批准方卡瓦科斯本人——卡瓦科斯不在 stakeholders 中，批准路径无法追踪\n\nstakeholderId 'board' 具名授权人身份及权限范围——authorityStatus 为 requires_further_verification，书面批准状态未知\n\ndeadline.dl-substitute-decision 正式来源——oral_testimony_projection，置信度 medium，缺正式场馆程序文件\n\nincident.broadcast_scope 全国高清转播及欧洲网络传播真实范围——xinmin-20140316、call-transcript-20260902 原文不在 workspace，无法独立核实\n\ndeadline.dl-doors 及 deadline.dl-broadcast-lock 的正式文件——来源 synthetic_venue_procedure，置信度 assumed，缺原始文件\n\nincident.medical_rest_duration_hours 真实小时数——call-transcript 与 people 来源存在 20h/24h 冲突，缺医师书面证明仲裁\n\naudience.actual_attendance_rate——原始来源未确认到场率，标记 uncertain，影响客服口径及现场秩序估算\n\n\n下一步\n\n贡献方（contributor）：补充 xinmin-20140316 及 call-transcript-20260902 可核实原文，以确认转播范围与退款依据；提供医师书面证明或第三方医疗文件，仲裁 20 小时与 24 小时休息时长冲突；核实或替换替补决定截止时间（17:00）的正式来源；替补钢琴家身份须在 stakeholders 中具名；经纪公司须明确 stakeholderId 对应关系。上海东方艺术中心具名经济授权人：对任何 50% 退款执行作出书面批准，批准范围须含对外口径、退款窗口及一个月期限。里卡多·夏伊与莱比锡布商大厦管弦乐团：对所有节目变更方案（含卡瓦科斯替补方案）作出书面艺术认可。所有批准动作须在操作层面保持未授权，本轮收据不触发任何 ticket、客服系统写入或外发消息。\n\n\n业务影响\n\n{\n  \"area\": \"event\",\n  \"status\": \"unknown\",\n  \"explanation\": \"关键事实存在多项冲突（医疗时长、截止时间来源、编制缺口），替补方案批准路径存在端点缺口，当前无足够信息确认 Event 系统的影响结论。\"\n}\n\n{\n  \"area\": \"ticketing\",\n  \"status\": \"unknown\",\n  \"explanation\": \"退款方案历史结果多方来源支持，但执行须经济授权人具名书面批准；任何 ticketing 系统写入须在批准完成后方可确认，当前无法评估。\"\n}\n\n{\n  \"area\": \"customer_service\",\n  \"status\": \"unknown\",\n  \"explanation\": \"转播范围（涉及观众数量与通知范围）缺独立核实原文，观众实际到场率未确认；客服口径与通知范围无法在当前状态下落地。\"\n}\n\n{\n  \"area\": \"notification\",\n  \"status\": \"unknown\",\n  \"explanation\": \"截止时间来源置信度不一致（medium/assumed），缺正式文件；通知安排及直播信号锁定时间均无法在当前状态下确认。\"\n}\n\n{\n  \"area\": \"knowledge_base\",\n  \"status\": \"unknown\",\n  \"explanation\": \"材料本身为反事实演练包且含合成数据，当前无足够核实信息确认可写入知识库，保持未知。\"\n}"
+        },
+        {
+          "taskId": "cloud-crisis-2014-east-art-center-p6-04",
+          "role": "approval_guard",
+          "status": "completed",
+          "summary": "本轮材料为历史事件反事实复盘脱敏包（含合成数据注入项），所有批准与执行动作本轮均不得触发。已确认：钢琴家尼尔森·弗雷尔因突发严重身体不适无法参加 2014-03-15 晚场演出，受影响曲目为贝多芬《第五钢琴协奏曲〈皇帝〉》（时长约 42 分钟），演出具有全国多地高清转播、欧洲网络传播及京沪电台直播覆盖，历史结局为演出结束后一个月内凭票退还票面金额 50%（多方来源支持）。仍受阻原因：第一，医疗休息时长存在 20 小时与 24 小时的口述证词冲突，无医师书面证明仲裁，替补艺术家通知时间窗口无法估算；第二，替补决定截止时间（17:00）来源置信度 medium，入场与直播锁定时间来源置信度 assumed，均无正式场馆文件支撑；第三，转播范围仅部分验证，xinmin-20140316 及 call-transcript-20260902 原文在 workspace 不可独立核实；第四，替补钢琴家身份在利益相关方中完全缺失，经纪公司 stakeholderId 无法自动确认等同关系，董事会具名授权人权限状态仍待核实；第五，lateArrivalFacts[0] 明确标记 synthetic，不可纳入截止时间或合排条件判断。业务影响：任何业务执行动作（含退款、节目变更、通知发送）均处于未授权状态，活动页信息状态未确认，票务系统与客服口径均无法在当前核实基础上落地。下一步由贡献方补充可核实原文及医师书面证明，由上海东方艺术中心具名经济授权人对 50% 退款执行作出书面批准，由指挥里卡多·夏伊与莱比锡布商大厦管弦乐团对所有节目变更作出书面认可，替补钢琴家身份具名后方可启动替补批准路径。",
+          "detailText": "事实条目（Agent 输出，须结合证据核对）\n\n{\n  \"field\": \"incident.pianist_status\",\n  \"value\": \"尼尔森·弗雷尔突发严重身体不适，无法参加 2014-03-15 晚场演出\",\n  \"evidenceRefs\": [\n    \"call-transcript-20260902#05:21-05:48\",\n    \"xinmin-20140316\",\n    \"people-20140319\"\n  ]\n}\n\n{\n  \"field\": \"program.affected_work\",\n  \"value\": \"贝多芬《第五钢琴协奏曲〈皇帝〉》\",\n  \"evidenceRefs\": [\n    \"call-transcript-20260902#03:12-03:29\",\n    \"people-20140319\"\n  ]\n}\n\n{\n  \"field\": \"program.affected_duration_minutes\",\n  \"value\": \"42 分钟（口述证词，独立来源未在 workspace 核实）\",\n  \"evidenceRefs\": [\n    \"call-transcript-20260902#08:26-08:42\"\n  ]\n}\n\n{\n  \"field\": \"incident.broadcast_scope\",\n  \"value\": \"全国多地高清转播、欧洲网络传播及北京上海电台直播（部分验证，原文未在 workspace 核实）\",\n  \"evidenceRefs\": [\n    \"call-transcript-20260902#05:58-08:14\",\n    \"xinmin-20140316\"\n  ]\n}\n\n{\n  \"field\": \"historicalOutcome.refund\",\n  \"value\": \"演出结束后一个月内凭票退还票面金额 50%（多方来源支持，执行需经济授权人书面批准）\",\n  \"evidenceRefs\": [\n    \"call-transcript-20260902#21:54-23:07\",\n    \"people-20140319\"\n  ]\n}\n\n{\n  \"field\": \"incident.medical_rest_duration_hours\",\n  \"value\": \"20–24 小时（口述证词冲突，无医师书面证明仲裁）\",\n  \"evidenceRefs\": [\n    \"call-transcript-20260902#05:31-05:45\",\n    \"people-20140319\"\n  ]\n}\n\n{\n  \"field\": \"deadline.dl-substitute-decision\",\n  \"value\": \"2014-03-15 17:00 替补决定截止（来源 oral_testimony_projection，置信度 medium）\",\n  \"evidenceRefs\": [\n    \"INPUT incident.deadlines[0]\"\n  ]\n}\n\n{\n  \"field\": \"deadline.dl-curtain\",\n  \"value\": \"2014-03-15 19:30 晚场开演（来源 contemporary_report，置信度高）\",\n  \"evidenceRefs\": [\n    \"INPUT incident.deadlines[3]\"\n  ]\n}\n\n{\n  \"field\": \"stakeholder.east-art-center\",\n  \"value\": \"上海东方艺术中心（场地、主办方、观众责任方；具名经济授权人尚未确认）\",\n  \"evidenceRefs\": [\n    \"INPUT stakeholders[0].label\"\n  ]\n}\n\n{\n  \"field\": \"stakeholder.orchestra\",\n  \"value\": \"莱比锡布商大厦管弦乐团（表演方、合同方）\",\n  \"evidenceRefs\": [\n    \"INPUT stakeholders[1].label\"\n  ]\n}\n\n{\n  \"field\": \"stakeholder.conductor\",\n  \"value\": \"里卡多·夏伊（艺术决策参与方）\",\n  \"evidenceRefs\": [\n    \"INPUT stakeholders[3].label\"\n  ]\n}\n\n{\n  \"field\": \"option-shortened-program-half-refund.status\",\n  \"value\": \"prepare_only，需上海东方艺术中心具名经济授权人书面批准方可执行\",\n  \"evidenceRefs\": [\n    \"INPUT options[3].agentDecision\",\n    \"INPUT options[3].requiredHumanApprovals\"\n  ]\n}\n\n\n冲突\n\n{\n  \"content\": \"医疗休息时长口述证词数值冲突：call-transcript-20260902 记录约 20 小时，people-20140319 记录约 24 小时，两者均为 dataClass: oral_testimony，无医师书面证明作为仲裁来源。\",\n  \"severity\": \"high\",\n  \"evidenceRefs\": [\n    \"call-transcript-20260902#05:31-05:45\",\n    \"people-20140319\"\n  ],\n  \"businessImpact\": \"直接影响替补艺术家通知时间窗口估算及退款时效依据；基于单一数值的业务决策存在失误风险。\"\n}\n\n{\n  \"content\": \"替补决定截止时间（dl-substitute-decision 17:00）来源置信度 medium；观众入场（18:30）及直播信号锁定（18:45）来源为 synthetic_venue_procedure，置信度 assumed，均无正式场馆程序文件支撑。\",\n  \"severity\": \"medium\",\n  \"evidenceRefs\": [\n    \"INPUT incident.deadlines[0]\",\n    \"INPUT incident.deadlines[1]\",\n    \"INPUT incident.deadlines[2]\"\n  ],\n  \"businessImpact\": \"操作截止时间不可靠，若依赖该时间线组织行动存在错过真实窗口的风险。\"\n}\n\n{\n  \"content\": \"转播范围（incident.broadcast_scope）标记为 partially_verified；xinmin-20140316 及 call-transcript-20260902 被引用但原文在 workspace 中不可独立核实。\",\n  \"severity\": \"medium\",\n  \"evidenceRefs\": [\n    \"xinmin-20140316\",\n    \"call-transcript-20260902\"\n  ],\n  \"businessImpact\": \"客服对外口径、观众数量估算及多地通知范围的业务计划均缺少独立核实基础。\"\n}\n\n{\n  \"content\": \"董事会与股东具名授权人权限状态：stakeholderId 'board' 的 authorityStatus 为 requires_further_verification，书面批准是否具有法律效力及具名授权人身份均未在 INPUT 中确认。\",\n  \"severity\": \"medium\",\n  \"evidenceRefs\": [\n    \"INPUT stakeholders[7].authorityStatus\"\n  ],\n  \"businessImpact\": \"退款执行及需要经济批准的业务动作无法依赖董事会授权，approval-half-refund 路径缺少经济授权人具名批准。\"\n}\n\n{\n  \"content\": \"马勒《第七交响曲》补演方案：已知前后两晚编制不同，缺少约二三十名乐手，无法在剩余时间内召回，方案本身不成立。\",\n  \"severity\": \"high\",\n  \"evidenceRefs\": [\n    \"INPUT options[2].knownBlockers[0]\"\n  ],\n  \"businessImpact\": \"该方案可直接排除，不应纳入当前决策考虑。\"\n}\n\n{\n  \"content\": \"lateArrivalFacts[0]（乐团书面确认项）明确标记 dataClass: simulated、synthetic: true，不可作为真实业务证据使用，若误入程序性截止时间或合排条件判断将导致误判。\",\n  \"severity\": \"high\",\n  \"evidenceRefs\": [\n    \"INPUT lateArrivalFacts[0]\"\n  ],\n  \"businessImpact\": \"该条信息不得纳入任何截止时间或合排条件的实际判断，否则将基于虚假证据作出错误操作安排。\"\n}\n\n\n待确认项\n\nincident.medical_rest_duration_hours — 真实休息小时数仍有 20h/24h 冲突，需医师证明或第三方医疗文件确认\n\nincident.broadcast_scope — 缺少 xinmin-20140316 及 call-transcript-20260902 原文，无法独立核实全国高清转播及欧洲网络传播真实范围\n\ndeadline.dl-substitute-decision — 来源置信度 medium，缺少正式场馆程序文件支撑\n\ndeadline.dl-doors — 来源 synthetic_venue_procedure，置信度 assumed，无原始文件\n\ndeadline.dl-broadcast-lock — 同上，无法核实是否存在 18:45 信号锁定操作\n\nstakeholderId 'agency' 对应经纪公司具名身份及联系方式 — approval-substitute-pianist-agency 批准方无法确认\n\n替补钢琴家身份 — stakeholders 中无对应条目，option-find-pianist-substitute 标注待具名，所有依赖该身份的批准路径无法追踪\n\noption-kavakos-mendelssohn 所需批准方卡瓦科斯本人 — 卡瓦科斯不在 stakeholders 中，批准路径无法追踪\n\nstakeholderId 'board' 具名授权人身份及权限范围 — authorityStatus requires_further_verification，书面批准状态未知\n\n上海东方艺术中心具名经济授权人身份 — approval-economic-authority-half-refund 所需批准方尚未具名\n\naudience.actual_attendance_rate — 原始来源未确认观众实际到场率或直播参与边界，标记 uncertain\n\n\n下一步\n\n贡献方（contributor）：补充 xinmin-20140316 及 call-transcript-20260902 可核实原文，以确认转播范围与退款依据；提供医师书面证明或第三方医疗文件，仲裁 20 小时与 24 小时休息时长冲突；核实或替换替补决定截止时间（17:00）及入场/直播截止时间的正式来源；替补钢琴家身份须在 stakeholders 中具名；经纪公司 stakeholderId 对应关系须明确；董事会具名授权人权限须核实。上海东方艺术中心具名经济授权人：对保留剩余节目并退还票面金额 50% 方案作出书面批准，批准范围须含对外口径、一个月退款窗口及票务系统执行授权。指挥里卡多·夏伊与莱比锡布商大厦管弦乐团：对所有节目变更方案（含卡瓦科斯替补方案及任何临时换曲方案）作出书面艺术认可。以上批准动作在书面批准完成前，任何 ticketing 系统写入、客服口径发布、通知发送及知识库更新均不得执行。\n\n\n业务影响\n\n{\n  \"area\": \"event\",\n  \"status\": \"unknown\",\n  \"explanation\": \"医疗时长冲突与截止时间来源置信度不足导致活动状态无法确认；替补批准路径存在三个端点缺口（替补钢琴家身份缺失、经纪公司 stakeholderId 未确认、指挥与乐团书面认可尚未取得），马勒补演方案已排除；在截止时间与替补路径核实前，Event 系统影响保持未知。\"\n}\n\n{\n  \"area\": \"ticketing\",\n  \"status\": \"unknown\",\n  \"explanation\": \"50% 退款历史结局多方来源支持，但执行须上海东方艺术中心具名经济授权人书面批准；转播范围未核实导致实际观众数量与退票规模无法确认；ticketing 系统任何写入须在书面批准完成后方可确认，当前状态为未知。\"\n}\n\n{\n  \"area\": \"customer_service\",\n  \"status\": \"unknown\",\n  \"explanation\": \"客服对外口径依赖核实后的转播范围与退款执行方案，当前转播范围仅部分验证且原文不可独立核实，观众实际到场率未确认；在来源核实与退款方案批准前，客服口径无法在当前状态下落地。\"\n}\n\n{\n  \"area\": \"notification\",\n  \"status\": \"unknown\",\n  \"explanation\": \"截止时间来源置信度不一致（替补决定 medium、入场及直播锁定 assumed），缺正式场馆文件；通知安排及直播信号锁定时间均无法在当前状态下可靠规划。\"\n}\n\n{\n  \"area\": \"knowledge_base\",\n  \"status\": \"unknown\",\n  \"explanation\": \"材料本身为反事实演练包且含合成数据注入项，原文不可独立核实，在贡献方补充可核实来源并完成验证前，不得更新正式知识库，当前状态保持未知。\"\n}"
+        }
+      ],
+      "leader": {
+        "status": "READY_FOR_HUMAN_REVIEW",
+        "summary": "四份责任位收据（material_intake / evidence_guard / entity_matcher / approval_guard）均指向同一反事实复盘脱敏演练包，含合成数据注入项（lateArrivalFacts[0] 标记 synthetic: true），零真实写入，不得触发任何生产动作。已确认核心事实：钢琴家尼尔森·弗雷尔于 2014-03-15 晚场突发严重身体不适无法演出，受影响曲目为贝多芬《第五钢琴协奏曲〈皇帝〉》（约 42 分钟），演出具有全国多地高清转播、欧洲网络传播及京沪电台直播覆盖，多方来源支持演出结束后一个月内凭票退还票面金额 50% 的历史结果。仍有三类障碍阻止进入正式业务记录：第一，事实冲突——医疗休息时长存在 20 小时与 24 小时口述证词冲突，无医师书面证明仲裁；替补决定截止时间（17:00）、观众入场截止（18:30）、直播信号锁定（18:45）均来源置信度不足（medium / assumed），无正式场馆文件支撑；转播范围仅部分验证，xinmin-20140316 及 call-transcript-20260902 原文在 workspace 不可独立核实。第二，端点缺口——替补钢琴家身份在利益相关方中完全缺失且标注\"待具名\"；经纪公司 stakeholderId 对应关系无法自动确认；卡瓦科斯本人不在利益相关方中；上海东方艺术中心具名经济授权人尚未确认；董事会具名授权人权限状态标记 requires_further_verification。第三，合成数据误用风险——lateArrivalFacts[0] 明确标记 dataClass: simulated、source: simulated_injection_for_eval、synthetic: true，不得纳入截止时间或合排条件判断。业务影响：任何退款执行、节目变更、通知发送、客服口径发布及知识库更新均处于未授权或来源不可靠状态，无法在当前核实基础上落地。",
+        "detailText": "事实条目（Agent 输出，须结合证据核对）\n\n{\n  \"field\": \"incident.pianist_status\",\n  \"value\": \"尼尔森·弗雷尔突发严重身体不适，无法参加 2014-03-15 晚场演出\",\n  \"evidenceRefs\": [\n    \"call-transcript-20260902#05:21-05:48\",\n    \"xinmin-20140316\",\n    \"people-20140319\"\n  ]\n}\n\n{\n  \"field\": \"program.affected_work\",\n  \"value\": \"贝多芬《第五钢琴协奏曲〈皇帝〉》\",\n  \"evidenceRefs\": [\n    \"call-transcript-20260902#03:12-03:29\",\n    \"people-20140319\"\n  ]\n}\n\n{\n  \"field\": \"program.affected_duration_minutes\",\n  \"value\": \"42 分钟（口述证词，独立来源未在 workspace 核实）\",\n  \"evidenceRefs\": [\n    \"call-transcript-20260902#08:26-08:42\"\n  ]\n}\n\n{\n  \"field\": \"incident.broadcast_scope\",\n  \"value\": \"全国多地高清转播、欧洲网络传播及北京上海电台直播（部分验证，原文未核实）\",\n  \"evidenceRefs\": [\n    \"call-transcript-20260902#05:58-08:14\",\n    \"xinmin-20140316\"\n  ]\n}\n\n{\n  \"field\": \"historicalOutcome.refund\",\n  \"value\": \"演出结束后一个月内凭票退还票面金额 50%（多方来源支持，执行须经济授权人书面批准）\",\n  \"evidenceRefs\": [\n    \"call-transcript-20260902#21:54-23:07\",\n    \"people-20140319\"\n  ]\n}\n\n{\n  \"field\": \"stakeholder.presenter\",\n  \"value\": \"上海东方艺术中心（场地、主办方、观众责任方；具名经济授权人尚未确认）\",\n  \"evidenceRefs\": [\n    \"INPUT stakeholders[0].label\"\n  ]\n}\n\n{\n  \"field\": \"stakeholder.orchestra\",\n  \"value\": \"莱比锡布商大厦管弦乐团（表演方、合同方）\",\n  \"evidenceRefs\": [\n    \"INPUT stakeholders[1].label\"\n  ]\n}\n\n{\n  \"field\": \"stakeholder.conductor\",\n  \"value\": \"里卡多·夏伊（艺术决策参与方）\",\n  \"evidenceRefs\": [\n    \"INPUT stakeholders[3].label\"\n  ]\n}\n\n{\n  \"field\": \"deadline.dl-curtain\",\n  \"value\": \"2014-03-15 19:30 晚场开演（来源：contemporary_report，置信度：高）\",\n  \"evidenceRefs\": [\n    \"INPUT incident.deadlines[3].at\"\n  ]\n}\n\n{\n  \"field\": \"deadline.dl-substitute-decision\",\n  \"value\": \"2014-03-15 17:00 替补决定截止（来源 oral_testimony_projection，置信度 medium，需进一步核实）\",\n  \"evidenceRefs\": [\n    \"INPUT incident.deadlines[0].at\"\n  ]\n}\n\n{\n  \"field\": \"material_nature\",\n  \"value\": \"历史事件反事实演练脱敏包，含合成数据注入项（lateArrivalFacts[0] synthetic: true），零真实写入\",\n  \"evidenceRefs\": [\n    \"INPUT note: '历史事件反事实演练 · 脱敏冻结投影 + 合成虚拟闭源库 · 零真实写入'\",\n    \"INPUT lateArrivalFacts[0].synthetic: true\"\n  ]\n}\n\n{\n  \"field\": \"option-kavakos-mendelssohn.status\",\n  \"value\": \"方案已排除，因编制缺口无法在剩余时间内召回约二三十名乐手\",\n  \"evidenceRefs\": [\n    \"INPUT options[2].knownBlockers[0]\"\n  ]\n}\n\n\n冲突\n\n{\n  \"content\": \"医疗休息时长口述证词数值冲突：call-transcript-20260902 记录约 20 小时，people-20140319 记录约 24 小时，两者均为 dataClass: oral_testimony，无医师书面证明作为仲裁来源，无法确认哪一数值准确。\",\n  \"severity\": \"high\",\n  \"evidenceRefs\": [\n    \"call-transcript-20260902#05:31-05:45\",\n    \"people-20140319\"\n  ],\n  \"businessImpact\": \"直接影响替补艺术家通知时间窗口估算及退款时效依据；任何基于单一数值的业务决策均存在失误风险。\"\n}\n\n{\n  \"content\": \"替补决定截止时间（dl-substitute-decision 17:00）来源为 oral_testimony_projection，置信度 medium；观众入场截止（18:30）及直播信号锁定（18:45）来源为 synthetic_venue_procedure，置信度 assumed，均无正式场馆程序文件支撑。\",\n  \"severity\": \"medium\",\n  \"evidenceRefs\": [\n    \"INPUT incident.deadlines[0].at\",\n    \"INPUT incident.deadlines[1].at\",\n    \"INPUT incident.deadlines[2].at\"\n  ],\n  \"businessImpact\": \"操作截止时间不可靠，若依赖该时间线组织行动存在错过真实窗口的风险；四个截止时间来源各异，置信度差异大，无统一程序文件支撑。\"\n}\n\n{\n  \"content\": \"转播范围（incident.broadcast_scope）标记为 partially_verified；xinmin-20140316 及 call-transcript-20260902 被引用但原文在 workspace 中不可独立核实，无法确认全国高清转播及欧洲网络传播的真实覆盖范围。\",\n  \"severity\": \"medium\",\n  \"evidenceRefs\": [\n    \"xinmin-20140316\",\n    \"call-transcript-20260902\"\n  ],\n  \"businessImpact\": \"客服对外口径、观众数量估算及多地通知范围的业务计划均缺少独立核实基础。\"\n}\n\n{\n  \"content\": \"董事会与股东具名授权人权限状态：stakeholderId 'board' 的 authorityStatus 为 requires_further_verification，书面批准是否具有法律效力及具名授权人身份均未在 INPUT 中确认。\",\n  \"severity\": \"medium\",\n  \"evidenceRefs\": [\n    \"INPUT stakeholders[7].authorityStatus\"\n  ],\n  \"businessImpact\": \"退款执行及任何需要经济批准的业务动作无法依赖董事会授权，approval-half-refund 路径缺少经济授权人具名批准。\"\n}\n\n{\n  \"content\": \"马勒《第七交响曲》补演方案：已知前后两晚编制不同，缺少约二三十名乐手，无法在剩余时间内召回，方案本身不成立，不应纳入当前决策。\",\n  \"severity\": \"high\",\n  \"evidenceRefs\": [\n    \"INPUT options[2].knownBlockers[0]\"\n  ],\n  \"businessImpact\": \"该方案可直接排除，不应占用决策资源。\"\n}\n\n{\n  \"content\": \"模拟注入数据误用风险：lateArrivalFacts[0]（乐团书面确认项）dataClass 为 simulated，source 为 simulated_injection_for_eval，synthetic 为 true，不可作为真实业务证据使用，若误入程序性截止时间或合排条件判断将导致误判。\",\n  \"severity\": \"high\",\n  \"evidenceRefs\": [\n    \"INPUT lateArrivalFacts[0]\"\n  ],\n  \"businessImpact\": \"该条信息不得纳入任何截止时间或合排条件的实际判断，否则将基于虚假证据作出错误操作安排。\"\n}\n\n\n待确认项\n\nincident.medical_rest_duration_hours — 真实休息小时数仍有 20h/24h 冲突，需医师证明或第三方医疗文件确认\n\nincident.broadcast_scope — 缺少 xinmin-20140316 及 call-transcript-20260902 原文，无法独立核实全国高清转播及欧洲网络传播真实范围\n\ndeadline.dl-substitute-decision — 来源 oral_testimony_projection，置信度 medium，缺少正式场馆程序文件支撑\n\ndeadline.dl-doors — 来源 synthetic_venue_procedure，置信度 assumed，无原始文件\n\ndeadline.dl-broadcast-lock — 同上，无法核实是否存在 18:45 信号锁定操作\n\nstakeholderId 'agency' 对应经纪公司具名身份及联系方式 — approval-substitute-pianist-agency 批准方无法确认\n\n替补钢琴家身份 — stakeholders 中无对应条目，option-find-pianist-substitute 标注待具名，所有依赖该身份的批准路径无法追踪\n\noption-kavakos-mendelssohn 所需批准方卡瓦科斯本人 — 卡瓦科斯不在 stakeholders 中，批准路径无法追踪\n\nstakeholderId 'board' 具名授权人身份及权限范围 — authorityStatus requires_further_verification，书面批准状态未知\n\n上海东方艺术中心具名经济授权人身份 — approval-economic-authority-half-refund 所需批准方尚未具名\n\naudience.actual_attendance_rate — 原始来源未确认观众实际到场率或直播参与边界，标记 uncertain\n\n\n下一步\n\n贡献方（contributor）：补充 xinmin-20140316 及 call-transcript-20260902 可核实原文，以确认转播范围与退款依据；提供医师书面证明或第三方医疗文件，仲裁 20 小时与 24 小时休息时长冲突；核实或替换替补决定截止时间（17:00）及入场/直播截止时间的正式来源；替补钢琴家身份须在 stakeholders 中具名；经纪公司 stakeholderId 对应关系须明确；董事会具名授权人权限须核实。上海东方艺术中心具名经济授权人：对保留剩余节目并退还票面金额 50% 方案作出书面批准，批准范围须含对外口径、一个月退款窗口及票务系统执行授权。指挥里卡多·夏伊与莱比锡布商大厦管弦乐团：对所有节目变更方案（含卡瓦科斯替补方案及任何临时换曲方案）作出书面艺术认可。替补钢琴家身份具名后方可启动替补批准路径。以上批准动作在书面批准完成前，任何 ticketing 系统写入、客服口径发布、通知发送及知识库更新均不得执行。\n\n\n业务影响\n\n{\n  \"area\": \"event\",\n  \"status\": \"unknown\",\n  \"explanation\": \"材料来源冲突与合成数据项尚未解决，无法确认演出受影响程度及替代方案可行性；替补批准路径存在三个端点缺口（替补钢琴家身份缺失、经纪公司 stakeholderId 未确认、指挥与乐团书面认可尚未取得）；马勒补演方案已排除；在截止时间与替补路径核实前，Event 系统影响保持未知。\"\n}\n\n{\n  \"area\": \"ticketing\",\n  \"status\": \"unknown\",\n  \"explanation\": \"50% 退款历史结局多方来源支持，但执行须上海东方艺术中心具名经济授权人书面批准；转播范围未核实导致实际观众数量与退票规模无法确认；ticketing 系统任何写入须在书面批准完成后方可确认，当前状态为未知。\"\n}\n\n{\n  \"area\": \"customer_service\",\n  \"status\": \"unknown\",\n  \"explanation\": \"客服对外口径依赖核实后的转播范围与退款执行方案，当前转播范围仅部分验证且原文不可独立核实，观众实际到场率未确认；在来源核实与退款方案批准前，客服口径无法在当前状态下落地。\"\n}\n\n{\n  \"area\": \"notification\",\n  \"status\": \"unknown\",\n  \"explanation\": \"截止时间来源置信度不一致（替补决定 medium、入场及直播锁定 assumed），缺正式场馆文件；通知安排及直播信号锁定时间均无法在当前状态下可靠规划。\"\n}\n\n{\n  \"area\": \"knowledge_base\",\n  \"status\": \"unknown\",\n  \"explanation\": \"材料本身为反事实演练包且含合成数据注入项，原文不可独立核实；在贡献方补充可核实来源并完成验证前，不得更新正式知识库，当前状态保持未知。\"\n}"
+      }
+    },
+    "skillInvocations": [
+      {
+        "skillId": "juchang-lifecycle-control",
+        "role": "team_leader",
+        "status": "succeeded",
+        "contract": "juchang-lifecycle-operation@1",
+        "version": "1.2.3",
+        "invokedAt": "2026-09-03T06:23:54.953Z"
+      },
+      {
+        "skillId": "juchang-lifecycle-control",
+        "role": "team_leader",
+        "status": "succeeded",
+        "contract": "juchang-lifecycle-operation@1",
+        "version": "1.2.3",
+        "invokedAt": "2026-09-03T06:28:56.611Z"
+      },
+      {
+        "skillId": "arts-culture-evidence-intake",
+        "role": "material_intake",
+        "status": "succeeded",
+        "contract": "arts-culture-evidence-intake@1",
+        "version": "1.0.0",
+        "invokedAt": "2026-09-03T06:23:55.384Z"
+      },
+      {
+        "skillId": "juchang-dsh-executor",
+        "role": "material_intake",
+        "status": "succeeded",
+        "contract": "juchang-dsh-executor@1",
+        "version": "1.2.3",
+        "invokedAt": "2026-09-03T06:24:58.814Z"
+      },
+      {
+        "skillId": "juchang-task-submit",
+        "role": "material_intake",
+        "status": "succeeded",
+        "contract": "juchang-task-submit@1",
+        "version": "1.2.3",
+        "invokedAt": "2026-09-03T06:25:29.393Z"
+      },
+      {
+        "skillId": "juchang-dsh-executor",
+        "role": "evidence_guard",
+        "status": "succeeded",
+        "contract": "juchang-dsh-executor@1",
+        "version": "1.2.3",
+        "invokedAt": "2026-09-03T06:25:30.221Z"
+      },
+      {
+        "skillId": "juchang-task-submit",
+        "role": "evidence_guard",
+        "status": "succeeded",
+        "contract": "juchang-task-submit@1",
+        "version": "1.2.3",
+        "invokedAt": "2026-09-03T06:25:54.820Z"
+      },
+      {
+        "skillId": "juchang-dsh-executor",
+        "role": "entity_matcher",
+        "status": "succeeded",
+        "contract": "juchang-dsh-executor@1",
+        "version": "1.2.3",
+        "invokedAt": "2026-09-03T06:25:30.479Z"
+      },
+      {
+        "skillId": "juchang-task-submit",
+        "role": "entity_matcher",
+        "status": "succeeded",
+        "contract": "juchang-task-submit@1",
+        "version": "1.2.3",
+        "invokedAt": "2026-09-03T06:26:42.077Z"
+      },
+      {
+        "skillId": "arts-culture-publish-gate",
+        "role": "approval_guard",
+        "status": "not_called",
+        "contract": "arts-culture-publish-gate@1",
+        "version": "1.0.0"
+      },
+      {
+        "skillId": "juchang-dsh-executor",
+        "role": "approval_guard",
+        "status": "succeeded",
+        "contract": "juchang-dsh-executor@1",
+        "version": "1.2.3",
+        "invokedAt": "2026-09-03T06:26:42.861Z"
+      },
+      {
+        "skillId": "juchang-task-submit",
+        "role": "approval_guard",
+        "status": "succeeded",
+        "contract": "juchang-task-submit@1",
+        "version": "1.2.3",
+        "invokedAt": "2026-09-03T06:28:56.060Z"
+      }
+    ],
+    "audit": {
+      "schema": "juchang-dsh-authority-audit@1",
+      "projectId": "cloud-crisis-2014-east-art-center-p6",
+      "events": [
+        {
+          "sequence": 1,
+          "at": "2026-09-03T06:23:55.028Z",
+          "operation": "create_project",
+          "success": true
+        },
+        {
+          "sequence": 2,
+          "at": "2026-09-03T06:23:55.115Z",
+          "operation": "plan_dag",
+          "success": true
+        },
+        {
+          "sequence": 3,
+          "at": "2026-09-03T06:23:55.389Z",
+          "operation": "delegate_task",
+          "taskId": "cloud-crisis-2014-east-art-center-p6-01",
+          "success": true,
+          "eventId": "$Yl-7SKNnPKbp5LWqcFCzyhGMUY7O0sJSbZ-TtVHvtk4"
+        },
+        {
+          "sequence": 4,
+          "at": "2026-09-03T06:25:29.829Z",
+          "operation": "check_task",
+          "taskId": "cloud-crisis-2014-east-art-center-p6-01",
+          "success": true,
+          "effective": true
+        },
+        {
+          "sequence": 5,
+          "at": "2026-09-03T06:25:29.918Z",
+          "operation": "accept_task_result",
+          "taskId": "cloud-crisis-2014-east-art-center-p6-01",
+          "success": true,
+          "status": "completed"
+        },
+        {
+          "sequence": 6,
+          "at": "2026-09-03T06:25:29.952Z",
+          "operation": "task_terminal_observed",
+          "taskId": "cloud-crisis-2014-east-art-center-p6-01",
+          "success": true,
+          "status": "completed"
+        },
+        {
+          "sequence": 7,
+          "at": "2026-09-03T06:25:30.207Z",
+          "operation": "delegate_task",
+          "taskId": "cloud-crisis-2014-east-art-center-p6-02",
+          "success": true,
+          "eventId": "$iUsjMKrmyS4bVDVnhso2yT-HXmLsTa27dmMpVyho6ns"
+        },
+        {
+          "sequence": 8,
+          "at": "2026-09-03T06:25:30.474Z",
+          "operation": "delegate_task",
+          "taskId": "cloud-crisis-2014-east-art-center-p6-03",
+          "success": true,
+          "eventId": "$4ukgomjfSXwrfDottTvVJ4lw1bDbxwx2Qpfn6_HQmgk"
+        },
+        {
+          "sequence": 9,
+          "at": "2026-09-03T06:25:55.241Z",
+          "operation": "check_task",
+          "taskId": "cloud-crisis-2014-east-art-center-p6-02",
+          "success": true,
+          "effective": true
+        },
+        {
+          "sequence": 10,
+          "at": "2026-09-03T06:25:55.327Z",
+          "operation": "accept_task_result",
+          "taskId": "cloud-crisis-2014-east-art-center-p6-02",
+          "success": true,
+          "status": "completed"
+        },
+        {
+          "sequence": 11,
+          "at": "2026-09-03T06:25:55.359Z",
+          "operation": "task_terminal_observed",
+          "taskId": "cloud-crisis-2014-east-art-center-p6-02",
+          "success": true,
+          "status": "completed"
+        },
+        {
+          "sequence": 12,
+          "at": "2026-09-03T06:25:55.477Z",
+          "operation": "delegate_task",
+          "taskId": "cloud-crisis-2014-east-art-center-p6-03",
+          "success": true,
+          "eventId": "$4ukgomjfSXwrfDottTvVJ4lw1bDbxwx2Qpfn6_HQmgk"
+        },
+        {
+          "sequence": 13,
+          "at": "2026-09-03T06:26:42.490Z",
+          "operation": "check_task",
+          "taskId": "cloud-crisis-2014-east-art-center-p6-03",
+          "success": true,
+          "effective": true
+        },
+        {
+          "sequence": 14,
+          "at": "2026-09-03T06:26:42.576Z",
+          "operation": "accept_task_result",
+          "taskId": "cloud-crisis-2014-east-art-center-p6-03",
+          "success": true,
+          "status": "completed"
+        },
+        {
+          "sequence": 15,
+          "at": "2026-09-03T06:26:42.606Z",
+          "operation": "task_terminal_observed",
+          "taskId": "cloud-crisis-2014-east-art-center-p6-03",
+          "success": true,
+          "status": "completed"
+        },
+        {
+          "sequence": 16,
+          "at": "2026-09-03T06:26:42.828Z",
+          "operation": "delegate_task",
+          "taskId": "cloud-crisis-2014-east-art-center-p6-04",
+          "success": true,
+          "eventId": "$zzaAsBXoSd7sB5k0szbfwtMbKOlMmR73oAJNpj46MXU"
+        },
+        {
+          "sequence": 17,
+          "at": "2026-09-03T06:28:56.464Z",
+          "operation": "check_task",
+          "taskId": "cloud-crisis-2014-east-art-center-p6-04",
+          "success": true,
+          "effective": true
+        },
+        {
+          "sequence": 18,
+          "at": "2026-09-03T06:28:56.549Z",
+          "operation": "accept_task_result",
+          "taskId": "cloud-crisis-2014-east-art-center-p6-04",
+          "success": true,
+          "status": "completed"
+        },
+        {
+          "sequence": 19,
+          "at": "2026-09-03T06:28:56.578Z",
+          "operation": "task_terminal_observed",
+          "taskId": "cloud-crisis-2014-east-art-center-p6-04",
+          "success": true,
+          "status": "completed"
+        },
+        {
+          "sequence": 20,
+          "at": "2026-09-03T06:29:28.097Z",
+          "operation": "complete_project",
+          "success": true,
+          "status": "completed"
+        },
+        {
+          "sequence": 21,
+          "at": "2026-09-03T06:29:28.128Z",
+          "operation": "project_terminal_observed",
+          "success": true,
+          "status": "completed"
+        }
+      ]
+    }
+  }
+}

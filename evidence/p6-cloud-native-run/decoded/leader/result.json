@@ -1,0 +1,56 @@
+{
+  "schema": "juchang-agentteams-dsh-result@1",
+  "projectId": "cloud-crisis-2014-east-art-center-p6",
+  "projectRef": "zhuantang-yixun",
+  "status": "completed",
+  "workers": [
+    {
+      "taskId": "cloud-crisis-2014-east-art-center-p6-01",
+      "role": "material_intake",
+      "status": "completed",
+      "receipt": "shared/tasks/cloud-crisis-2014-east-art-center-p6-01/workspace/receipt.json",
+      "conclusion": "HUMAN_REVIEW"
+    },
+    {
+      "taskId": "cloud-crisis-2014-east-art-center-p6-02",
+      "role": "evidence_guard",
+      "status": "completed",
+      "receipt": "shared/tasks/cloud-crisis-2014-east-art-center-p6-02/workspace/receipt.json",
+      "conclusion": "HUMAN_REVIEW"
+    },
+    {
+      "taskId": "cloud-crisis-2014-east-art-center-p6-03",
+      "role": "entity_matcher",
+      "status": "completed",
+      "receipt": "shared/tasks/cloud-crisis-2014-east-art-center-p6-03/workspace/receipt.json",
+      "conclusion": "HUMAN_REVIEW"
+    },
+    {
+      "taskId": "cloud-crisis-2014-east-art-center-p6-04",
+      "role": "approval_guard",
+      "status": "completed",
+      "receipt": "shared/tasks/cloud-crisis-2014-east-art-center-p6-04/workspace/receipt.json",
+      "conclusion": "HUMAN_REVIEW"
+    }
+  ],
+  "leader": {
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "receipt": "shared/projects/cloud-crisis-2014-east-art-center-p6/workspace/leader-receipt.json",
+    "skillTrace": {
+      "schema": "juchang-runtime-skill-trace-ref@1",
+      "runtimeOwned": true,
+      "bundlePath": "projects/cloud-crisis-2014-east-art-center-p6/workspace/skill-trace.json",
+      "bundleDigest": "5ac3d6f7fae0849f829de201025dbe8326ab9092ac4025b28af17b36449c3e9f",
+      "authorityPath": "projects/cloud-crisis-2014-east-art-center-p6/workspace/skill-trace-authority.json",
+      "authorityDigest": "57bb70f51522e0e5a7243c39289dd4a139b78d57e8eafc64868e7f8d6016aa61",
+      "recordCount": 2
+    }
+  },
+  "counters": {
+    "productionWrites": 0,
+    "publicPublishes": 0,
+    "realRefunds": 0,
+    "externalMessages": 0
+  },
+  "completedAt": "2026-09-03T06:29:28.217Z"
+}

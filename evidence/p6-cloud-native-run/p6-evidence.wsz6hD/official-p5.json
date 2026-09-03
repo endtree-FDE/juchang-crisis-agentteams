@@ -1,0 +1,92 @@
+{
+  "edges": [
+    {
+      "conditional": false,
+      "source": "cloud-crisis-2014-east-art-center-p5-01",
+      "target": "cloud-crisis-2014-east-art-center-p5-02"
+    },
+    {
+      "conditional": false,
+      "source": "cloud-crisis-2014-east-art-center-p5-01",
+      "target": "cloud-crisis-2014-east-art-center-p5-03"
+    },
+    {
+      "conditional": false,
+      "source": "cloud-crisis-2014-east-art-center-p5-02",
+      "target": "cloud-crisis-2014-east-art-center-p5-04"
+    },
+    {
+      "conditional": false,
+      "source": "cloud-crisis-2014-east-art-center-p5-03",
+      "target": "cloud-crisis-2014-east-art-center-p5-04"
+    }
+  ],
+  "interrupts": [
+    {
+      "action_request": {
+        "action": "resume",
+        "args": {
+          "project_id": "cloud-crisis-2014-east-art-center-p5"
+        }
+      },
+      "config": {
+        "allow_accept": true,
+        "allow_edit": false,
+        "allow_ignore": false,
+        "allow_respond": false
+      },
+      "description": "project is paused: Authorized room mismatch repair; preserve p5 evidence",
+      "id": "project",
+      "value": "paused"
+    }
+  ],
+  "mode": "",
+  "next": [],
+  "nodes": [
+    {
+      "assignee": "@juchang-v14-material-intake:matrix-local.agentteams.io:18080",
+      "id": "cloud-crisis-2014-east-art-center-p5-01",
+      "name": "现场事实与时间线",
+      "status": "pending"
+    },
+    {
+      "assignee": "@juchang-v14-evidence-guard:matrix-local.agentteams.io:18080",
+      "id": "cloud-crisis-2014-east-art-center-p5-02",
+      "name": "方案约束与艺术可行性",
+      "status": "pending"
+    },
+    {
+      "assignee": "@juchang-v14-entity-matcher:matrix-local.agentteams.io:18080",
+      "id": "cloud-crisis-2014-east-art-center-p5-03",
+      "name": "资源关系合同与授权",
+      "status": "pending"
+    },
+    {
+      "assignee": "@juchang-v14-approval-guard:matrix-local.agentteams.io:18080",
+      "id": "cloud-crisis-2014-east-art-center-p5-04",
+      "name": "观众沟通与执行门禁",
+      "status": "pending"
+    }
+  ],
+  "pause_reason": "Authorized room mismatch repair; preserve p5 evidence",
+  "plan_type": "dag",
+  "project_id": "cloud-crisis-2014-east-art-center-p5",
+  "requester": "@juchang-v14-lead:matrix-local.agentteams.io:18080",
+  "source": "juchang-editor",
+  "status": "paused",
+  "team_id": "",
+  "title": "2014·3·15 东艺演出危机反事实推演（云端权威运行）",
+  "updated_at": "2026-09-03T06:23:54Z",
+  "updated_by": "admin",
+  "values": {
+    "mode": "",
+    "plan_type": "dag",
+    "project_id": "cloud-crisis-2014-east-art-center-p5",
+    "status": "paused",
+    "task_count": {
+      "pending": 4
+    },
+    "team_id": "",
+    "title": "2014·3·15 东艺演出危机反事实推演（云端权威运行）"
+  }
+}

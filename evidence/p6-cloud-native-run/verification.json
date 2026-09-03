@@ -1,0 +1,21 @@
+{
+  "projectId": "cloud-crisis-2014-east-art-center-p6",
+  "execution": "completed",
+  "contentReview": "needs_revision",
+  "files": 26,
+  "auditEvents": 21,
+  "skillRecords": 12,
+  "successfulSkillRecords": 11,
+  "skippedSkills": [
+    {
+      "role": "approval_guard",
+      "skillId": "arts-culture-publish-gate"
+    }
+  ],
+  "counters": {
+    "productionWrites": 0,
+    "publicPublishes": 0,
+    "realRefunds": 0,
+    "externalMessages": 0
+  }
+}

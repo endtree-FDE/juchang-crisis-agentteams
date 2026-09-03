@@ -430,6 +430,7 @@ export type CrisisSimBootstrap = {
 /** 冻结回放（juchang-crisis-verified-replay@1）的业务可读摘要：技术哈希只在运行证据抽屉展示。 */
 export type VerifiedReplaySummary = {
   replayId: string;
+  presetId?: string;
   schema: string;
   frozenAt: string;
   readonly: boolean;
@@ -441,9 +442,10 @@ export type VerifiedReplaySummary = {
   };
   runtimeProvenance: { runtime?: string; cloudstudio?: boolean; statement?: string } | null;
   validation: { state?: string; issueCount?: number; counters?: Record<string, number> } | null;
+  qualityReview?: { status: string; summary: string } | null;
   digests: Record<string, string | null>;
-  workerSummaries: Array<{ taskId: string; role: string; status: string; summary: string }>;
-  leaderSummary: { status?: string; summary?: string } | null;
+  workerSummaries: Array<{ taskId: string; role: string; status: string; summary: string; detailText?: string }>;
+  leaderSummary: { status?: string; summary?: string; detailText?: string } | null;
   /** 真实 Skill 调用轨迹（业务可读字段；哈希等技术字段只进运行证据抽屉）。 */
   skillInvocations: Array<{
     skillId: string;

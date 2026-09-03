@@ -1,0 +1,17 @@
+"/agentteams-worker-juchang-v14-lead" "juchang/agentteams-dsh-runtime:0.4.6-p15-r6" "sha256:4bbadf8bb25758aba2969b30088cb813a6eafcf90779e7d77668d7177ff3b8c7" running=true restarts=0
+"/agentteams-worker-juchang-v14-material-intake" "juchang/agentteams-dsh-runtime:0.4.6-p15-r6" "sha256:4bbadf8bb25758aba2969b30088cb813a6eafcf90779e7d77668d7177ff3b8c7" running=true restarts=0
+"/agentteams-worker-juchang-v14-evidence-guard" "juchang/agentteams-dsh-runtime:0.4.6-p15-r6" "sha256:4bbadf8bb25758aba2969b30088cb813a6eafcf90779e7d77668d7177ff3b8c7" running=true restarts=1
+"/agentteams-worker-juchang-v14-entity-matcher" "juchang/agentteams-dsh-runtime:0.4.6-p15-r6" "sha256:4bbadf8bb25758aba2969b30088cb813a6eafcf90779e7d77668d7177ff3b8c7" running=true restarts=2
+"/agentteams-worker-juchang-v14-approval-guard" "juchang/agentteams-dsh-runtime:0.4.6-p15-r6" "sha256:4bbadf8bb25758aba2969b30088cb813a6eafcf90779e7d77668d7177ff3b8c7" running=true restarts=2
+"/agentteams-controller" "juchang/agentteams-controller-dsh:v1.2.3-0.3.0-4af58938" "sha256:46402d587edbdd69ca0d4ba39f9ba09f86cf2a7306d90df06fdc59833a1d093c" running=true restarts=0
+"/agentteams-manager" "juchang/agentteams-dsh-runtime:0.4.6-p14" "sha256:ede38a4233930f5e8a2800a50730ee249824725dee6e65ac69989723849a9317" running=true restarts=10
+"/agentteams-manager-backup-prev-20260829T164825Z" "juchang/agentteams-dsh-runtime:0.4.6-p13" "sha256:78f6d2113d9f22418f17b204f433994f8d4d42e5b35f8b79e0fd3dea3d182dee" running=false restarts=1
+"/agentteams-manager-backup-prev-20260829T111349Z" "juchang/agentteams-dsh-runtime:0.4.6-p12" "sha256:211d6096adae8973a3b87e718aa61c90213a23c714ba49f3cd947d5585146087" running=false restarts=0
+"/agentteams-manager-backup-prev-20260829T110049Z" "juchang/agentteams-dsh-runtime:0.4.6-p11" "sha256:c285f6259ef0b1b6b729c69509f8c9946a81dce898966c14020d62fab64bf522" running=false restarts=0
+"/agentteams-manager-backup-prev-20260829T105205Z" "juchang/agentteams-dsh-runtime:0.4.6-p10" "sha256:6cbdf85f9df59e58f213108a063890cdb4676848a84de3949a150959b7953d66" running=false restarts=0
+"/agentteams-manager-backup-prev-20260829T095853Z" "juchang/agentteams-dsh-runtime:0.4.6-p9" "sha256:2046f45b2308139e3e2e1a9051bcc45a9c2a2cf9fa73bcb08272efb570f84023" running=false restarts=0
+"/agentteams-manager-backup-novol-c76fd90e-persist" "juchang/agentteams-dsh-runtime:0.4.6-c76fd90e" "sha256:a7b91c4707aa8e2df849bb792872b4903d89fc9ce28317336781686d383b629d" running=false restarts=0
+"/agentteams-manager-backup-novol-workerimage-4af58938" "juchang/agentteams-dsh-runtime:0.4.6-4af58938" "sha256:3951ba19e2d6b64aee0b58d56036cec1451dfdb7e83aa6061e5e024ba455f87a" running=false restarts=0
+"/agentteams-manager-backup-heartbeat-d8e88fa2" "juchang/agentteams-dsh-runtime:0.4.6-hotfix-5d6f1fb2-r2" "sha256:65eb180f6af5ab96a349467e49f30f8f2d870b8b8495cfaba2306eebc188488b" running=false restarts=0
+"/agentteams-manager-backup-novol-20260825T182614Z" "juchang/agentteams-dsh-runtime:0.4.6" "sha256:e12d30fe76efc79632977c8d626a7589407e914a502723490f6c8e2e5bb34300" running=false restarts=0
+"/agentteams-manager-backup-044-20260825T181045Z" "juchang/agentteams-dsh-runtime:0.4.4" "sha256:318964262edde0c9752aaab8b32f3fd3d6a9a679771ff8ddd43bab7f8bb3c68e" running=false restarts=0

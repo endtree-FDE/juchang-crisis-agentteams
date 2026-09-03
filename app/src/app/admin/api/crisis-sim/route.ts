@@ -46,10 +46,13 @@ function getVerifiedReplays(): VerifiedReplaySummary[] {
   try {
     const dir = path.join(process.cwd(), "src/data/crisis-sim");
     replaysCache = readdirSync(dir)
-      .filter((name) => name.startsWith("verified-replay-") && name.endsWith(".json"))
+      .filter((name) => (name.startsWith("verified-replay-") || name.startsWith("native-agentteams-")) && name.endsWith(".json"))
       .sort()
       .map((name) => {
         const parsed = JSON.parse(readFileSync(path.join(dir, name), "utf8")) as Record<string, unknown>;
+        if (name.startsWith("native-agentteams-") && (parsed.schema !== "juchang-crisis-native-replay@1" || parsed.readonly !== true)) {
+          throw new Error("native_archive_projection_invalid");
+        }
         const replay = (parsed.replay ?? {}) as Record<string, unknown>;
         const receipt = (replay.receipt ?? {}) as Record<string, unknown>;
         const workers = Array.isArray(receipt.workers) ? (receipt.workers as Array<Record<string, unknown>>) : [];
@@ -60,6 +63,7 @@ function getVerifiedReplays(): VerifiedReplaySummary[] {
         const rawAuditEvents = Array.isArray(audit.events) ? (audit.events as Array<Record<string, unknown>>) : [];
         return {
           replayId: String(parsed.replayId ?? name),
+          presetId: String(parsed.presetId ?? "2014-east-art-center"),
           schema: String(parsed.schema ?? ""),
           frozenAt: String(parsed.frozenAt ?? ""),
           readonly: parsed.readonly === true,
@@ -67,12 +71,14 @@ function getVerifiedReplays(): VerifiedReplaySummary[] {
           source: (parsed.source ?? {}) as VerifiedReplaySummary["source"],
           runtimeProvenance: (replay.provenance ?? null) as VerifiedReplaySummary["runtimeProvenance"],
           validation: (parsed.validation ?? null) as VerifiedReplaySummary["validation"],
+          qualityReview: (parsed.qualityReview ?? null) as VerifiedReplaySummary["qualityReview"],
           digests: (parsed.digests ?? {}) as Record<string, string | null>,
           workerSummaries: workers.map((worker) => ({
             taskId: String(worker.taskId ?? ""),
             role: String(worker.role ?? ""),
             status: String(worker.status ?? ""),
             summary: String(worker.summary ?? ""),
+            detailText: typeof worker.detailText === "string" ? worker.detailText : undefined,
           })),
           leaderSummary: (receipt.leader ?? null) as VerifiedReplaySummary["leaderSummary"],
           skillInvocations: rawSkillInvocations.map((invocation) => ({
