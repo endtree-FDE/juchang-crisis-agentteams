@@ -1,0 +1,12 @@
+{
+  "name": "juchang-crisis-agentteams",
+  "version": "1.0.0",
+  "description": "据场 · 2014 东艺危机 AgentTeams 反事实推演（复赛可执行代码包）：协议模拟 + 六项确定性 Eval + Context Broker + 真实运行回放 + Verified Replay 导出门禁",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --import ./scripts/crisis-sim/register-ts-paths.mjs --test --test-isolation=none scripts/crisis-sim/crisis-sim.test.mjs",
+    "replay:verify": "node scripts/crisis-sim/export-verified-replay.mjs"
+  },
+  "engines": { "node": ">=22.18" }
+}

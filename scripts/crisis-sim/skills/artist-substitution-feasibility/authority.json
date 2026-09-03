@@ -1,0 +1,26 @@
+{
+  "schema": "juchang-skill-authority@1",
+  "skillId": "artist-substitution-feasibility",
+  "version": "0.1.0",
+  "deterministic": true,
+  "modelCalls": 0,
+  "mayRead": [
+    "app/src/data/crisis-sim/2014-east-art-center.preset.json",
+    "app/src/data/crisis-sim/stage-malfunction.preset.json",
+    "app/src/data/crisis-sim/virtual-private-library.json"
+  ],
+  "mayWrite": [
+    "output/crisis-sim/**"
+  ],
+  "forbidden": [
+    "approve",
+    "publish",
+    "refund",
+    "external_message",
+    "production_write",
+    "network_access",
+    "env_secret_read",
+    "pocketbase_write"
+  ],
+  "note": "本 manifest 是本 Skill 的权限声明，其 sha256 作为 evidence skillInvocations[].authoritySha256 如实引用。"
+}

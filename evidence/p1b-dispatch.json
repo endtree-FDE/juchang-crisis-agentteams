@@ -1,0 +1,63 @@
+{
+  "schema": "juchang-cloud-dispatch@1",
+  "dispatchId": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z",
+  "projectId": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z",
+  "idempotencyKey": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z",
+  "changeRef": "crisis-sim-2014-east-art-center",
+  "projectRef": "zhuantang-crisis-sim",
+  "adapterRef": "none-dsh-local-session",
+  "decisionRunId": "p1b-dsh-local-20260902T1818Z",
+  "riskRoute": "TEAM",
+  "runtimeEnvironment": "cloudstudio",
+  "targetTeam": "juchang-change-control-v14",
+  "targetLeaderDMRoomId": "!GKL4XFzVKBFE6bqGad:matrix-local.agentteams.io:18080",
+  "external_write_allowed": false,
+  "sourceLocators": [
+    "app/src/data/crisis-sim/2014-east-art-center.preset.json",
+    "app/src/data/crisis-sim/virtual-private-library.json"
+  ],
+  "affectedObjects": [],
+  "unresolvedQuestions": [
+    "医嘱休息时长存在 20h/24h 冲突（fact-medical-rest-duration），安全结论仅到'医生禁止当晚上台'。",
+    "具名经济授权人身份未确认（board 的 authorityStatus 为 oral_testimony_requires_further_verification）。",
+    "卡瓦科斯本人意愿、当前地点与上海音乐厅许可均需现场确认，无任何一方已授权。"
+  ],
+  "tasks": [
+    {
+      "taskId": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-01",
+      "role": "material_intake",
+      "dependsOn": [],
+      "output": "status + summary + deliverables"
+    },
+    {
+      "taskId": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-02",
+      "role": "evidence_guard",
+      "dependsOn": [
+        "material_intake"
+      ],
+      "output": "status + summary + deliverables"
+    },
+    {
+      "taskId": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-03",
+      "role": "entity_matcher",
+      "dependsOn": [
+        "material_intake"
+      ],
+      "output": "status + summary + deliverables"
+    },
+    {
+      "taskId": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-04",
+      "role": "approval_guard",
+      "dependsOn": [
+        "evidence_guard",
+        "entity_matcher"
+      ],
+      "output": "status + summary + deliverables"
+    }
+  ],
+  "authority": {
+    "mayApprove": false,
+    "mayExecute": false,
+    "publicWriteAllowed": false
+  }
+}

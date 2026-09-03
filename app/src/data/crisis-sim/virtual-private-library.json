@@ -1,0 +1,345 @@
+{
+  "schema": "juchang-synthetic-private-library@0.1",
+  "libraryId": "synthetic-east-art-center-demo",
+  "libraryMode": "synthetic_private_demo",
+  "title": "东艺危机反事实推演虚拟闭源库",
+  "sourceProvenance": {
+    "sourceFile": "output/briefing/林宏鸣沟通材料/2014-东艺危机-虚拟闭源库-v0.json",
+    "sourceSchema": "juchang-synthetic-private-library@0.1",
+    "sourceFileSha256": "53512474fb3675152ad408fe8d96cd63e0353d701ace80f918acf9e75bd01452",
+    "frozenAt": "2026-09-02",
+    "desensitized": true
+  },
+  "disclosure": {
+    "synthetic": true,
+    "containsRealSecrets": false,
+    "containsRealPersonalData": false,
+    "containsRealContracts": false,
+    "notAuthoritativeForHistoricalFact": true,
+    "statement": "本库根据通话所揭示的业务对象和成熟演艺系统公开能力构造，仅用于比赛Live Simulation与Eval。"
+  },
+  "roles": [
+    "material_intake",
+    "evidence_guard",
+    "entity_matcher",
+    "approval_guard",
+    "leader",
+    "human_incident_commander",
+    "human_skill_curator"
+  ],
+  "accessActions": [
+    "discover_metadata",
+    "read_excerpt",
+    "read_full",
+    "use_for_candidate",
+    "quote_in_internal_brief",
+    "quote_externally",
+    "approve",
+    "execute",
+    "curate_skill"
+  ],
+  "sourcePriority": [
+    "named_human_live_confirmation",
+    "current_signed_event_record",
+    "valid_private_library_record",
+    "contemporary_authoritative_public_source",
+    "open_database_or_third_party_source",
+    "model_memory"
+  ],
+  "collections": [
+    {
+      "collectionId": "organization-authority",
+      "label": "组织与权限",
+      "records": [
+        {
+          "recordId": "authority-live-program-change",
+          "classification": "restricted",
+          "synthetic": true,
+          "validFrom": "2014-03-01T00:00:00+08:00",
+          "validUntil": "2014-03-31T23:59:59+08:00",
+          "summary": "节目重大调整、取消、公开补偿和退款承诺必须由具名事件负责人确认；涉及超出标准政策的经济承担时升级到组织经济授权链。",
+          "permittedRoles": {
+            "discover_metadata": ["entity_matcher", "approval_guard", "leader"],
+            "read_excerpt": ["entity_matcher", "approval_guard", "leader"],
+            "read_full": ["human_incident_commander"],
+            "approve": ["human_incident_commander"]
+          },
+          "sourceBasis": "根据通话35:42—37:04对权力、董事会和股东的讨论构造。"
+        }
+      ]
+    },
+    {
+      "collectionId": "contracts-permissions",
+      "label": "合同与许可",
+      "records": [
+        {
+          "recordId": "permission-visiting-artist-third-party",
+          "classification": "confidential",
+          "synthetic": true,
+          "summary": "由其他场馆邀请到沪的艺术家，临时参加本场演出前必须获得原邀请方与艺术家授权；合作关系不构成许可。",
+          "permittedRoles": {
+            "discover_metadata": ["evidence_guard", "entity_matcher", "leader"],
+            "read_excerpt": ["entity_matcher", "leader"],
+            "read_full": ["human_incident_commander"],
+            "quote_externally": []
+          },
+          "sourceBasis": "根据通话12:10—13:30的合同与上海音乐厅许可讨论构造。"
+        },
+        {
+          "recordId": "contract-soloist-unavailable",
+          "classification": "confidential",
+          "synthetic": true,
+          "summary": "独奏家因健康原因无法登台时，先确认医生意见、合同责任、替补条件与节目完整性；具体经济责任需读取签署文本并由人解释。",
+          "permittedRoles": {
+            "discover_metadata": ["entity_matcher", "approval_guard", "leader"],
+            "read_excerpt": ["entity_matcher", "leader"],
+            "read_full": ["human_incident_commander"],
+            "quote_externally": []
+          },
+          "sourceBasis": "演示构造，不代表真实合同条款。"
+        }
+      ]
+    },
+    {
+      "collectionId": "artists-collaboration",
+      "label": "艺术家与合作",
+      "records": [
+        {
+          "recordId": "candidate-kavakos-shanghai",
+          "classification": "internal",
+          "synthetic": true,
+          "summary": "候选小提琴家卡瓦科斯在上海有下一日演出安排；当前地点、本人意愿和临时档期均需现场确认。",
+          "permittedRoles": {
+            "discover_metadata": ["evidence_guard", "entity_matcher", "leader"],
+            "read_excerpt": ["evidence_guard", "entity_matcher", "leader"],
+            "use_for_candidate": ["evidence_guard", "entity_matcher"]
+          },
+          "sourceBasis": "根据通话11:27—13:30构造；不是实时档期证明。"
+        },
+        {
+          "recordId": "collaboration-kavakos-chailly-orchestra",
+          "classification": "internal",
+          "synthetic": true,
+          "summary": "存在公开合作背景线索，但本场未合排；合作史不能证明当晚演出质量与本人同意。",
+          "permittedRoles": {
+            "discover_metadata": ["evidence_guard", "entity_matcher"],
+            "read_excerpt": ["evidence_guard", "entity_matcher"],
+            "use_for_candidate": ["evidence_guard"]
+          },
+          "sourceBasis": "根据通话13:49—15:13构造。"
+        }
+      ]
+    },
+    {
+      "collectionId": "repertoire-program",
+      "label": "曲目与节目",
+      "records": [
+        {
+          "recordId": "program-2014-03-15",
+          "classification": "internal",
+          "synthetic": true,
+          "summary": "当晚核心曲目包括门德尔松序曲、贝多芬《第五钢琴协奏曲〈皇帝〉》及肖斯塔科维奇《第五交响曲》；协奏曲约占重要节目时长。",
+          "permittedRoles": {
+            "discover_metadata": ["material_intake", "evidence_guard", "leader"],
+            "read_excerpt": ["material_intake", "evidence_guard", "leader"],
+            "read_full": ["evidence_guard"]
+          },
+          "sourceBasis": "根据通话和同期公开报道构造。"
+        },
+        {
+          "recordId": "repertoire-mahler-seven-requirements",
+          "classification": "internal",
+          "synthetic": true,
+          "summary": "马勒《第七交响曲》演示编制需求高于当晚原定节目；具体乐手需求须以真实总谱和乐团编制表为准。",
+          "permittedRoles": {
+            "discover_metadata": ["evidence_guard"],
+            "read_excerpt": ["evidence_guard"],
+            "use_for_candidate": ["evidence_guard"]
+          },
+          "sourceBasis": "根据通话15:15—16:00构造，不作为准确编制事实。"
+        }
+      ]
+    },
+    {
+      "collectionId": "people-rosters",
+      "label": "人员与排班",
+      "records": [
+        {
+          "recordId": "roster-current-night",
+          "classification": "restricted",
+          "synthetic": true,
+          "summary": "当晚约九十余名乐手已到场；补演前一晚曲目仍可能缺少二三十名不同编制乐手，无法在剩余时间内确认全部召回。",
+          "permittedRoles": {
+            "discover_metadata": ["material_intake", "evidence_guard", "leader"],
+            "read_excerpt": ["material_intake", "evidence_guard", "leader"],
+            "read_full": ["human_incident_commander"]
+          },
+          "sourceBasis": "根据通话15:33—15:56构造；人数为口述约数。"
+        }
+      ]
+    },
+    {
+      "collectionId": "venue-technical-assets",
+      "label": "场地与设备",
+      "records": [
+        {
+          "recordId": "broadcast-lock-state",
+          "classification": "internal",
+          "synthetic": true,
+          "summary": "多地高清、网络和电台传播准备已进入临近锁定状态；未经合排方案的错误具有被永久记录和反复传播的风险。",
+          "permittedRoles": {
+            "discover_metadata": ["material_intake", "evidence_guard", "approval_guard"],
+            "read_excerpt": ["material_intake", "evidence_guard", "approval_guard"]
+          },
+          "sourceBasis": "根据通话05:58—08:14、14:19—15:13构造。"
+        }
+      ]
+    },
+    {
+      "collectionId": "current-event-dossier",
+      "label": "当前演出档案",
+      "records": [
+        {
+          "recordId": "event-dossier-main",
+          "classification": "internal",
+          "synthetic": true,
+          "summary": "包含节目、合作方、演出时间、广播范围、公开承诺、值班角色和风险联系人；不含真实联系方式。",
+          "permittedRoles": {
+            "discover_metadata": ["material_intake", "evidence_guard", "entity_matcher", "approval_guard", "leader"],
+            "read_excerpt": ["material_intake", "evidence_guard", "entity_matcher", "approval_guard", "leader"],
+            "read_full": ["leader", "human_incident_commander"]
+          },
+          "sourceBasis": "比赛演示用合成事件包。"
+        }
+      ]
+    },
+    {
+      "collectionId": "ticketing-audience",
+      "label": "票务与观众",
+      "records": [
+        {
+          "recordId": "audience-impact-snapshot",
+          "classification": "restricted",
+          "synthetic": true,
+          "summary": "演出接近满座，观众包含外地来沪群体；退款窗口需要覆盖无法短期再次到场的人。无订单级个人信息。",
+          "permittedRoles": {
+            "discover_metadata": ["approval_guard", "leader"],
+            "read_excerpt": ["approval_guard", "leader"],
+            "read_full": ["human_incident_commander"]
+          },
+          "sourceBasis": "根据通话21:54—23:07与公开报道构造。"
+        }
+      ]
+    },
+    {
+      "collectionId": "marketing-promises",
+      "label": "营销与公开承诺",
+      "records": [
+        {
+          "recordId": "public-promise-premium-concert",
+          "classification": "internal",
+          "synthetic": true,
+          "summary": "宣传重点包括顶级乐团、重要指挥与核心协奏曲；替换方案需检查与原公开承诺的一致性。",
+          "permittedRoles": {
+            "discover_metadata": ["entity_matcher", "approval_guard", "leader"],
+            "read_excerpt": ["entity_matcher", "approval_guard", "leader"]
+          },
+          "sourceBasis": "根据通话43:20—44:00对宣传承诺和信任的讨论构造。"
+        }
+      ]
+    },
+    {
+      "collectionId": "customer-communication",
+      "label": "客服与沟通",
+      "records": [
+        {
+          "recordId": "joint-facing-communication-principle",
+          "classification": "internal",
+          "synthetic": true,
+          "summary": "对外说明应准确、及时、共同面对，避免把观众推向乐团或艺术家的对立面；健康信息只披露完成说明所需的最小范围。",
+          "permittedRoles": {
+            "discover_metadata": ["approval_guard", "leader"],
+            "read_excerpt": ["approval_guard", "leader"],
+            "use_for_candidate": ["approval_guard"]
+          },
+          "sourceBasis": "根据通话19:35—22:10构造。"
+        }
+      ]
+    },
+    {
+      "collectionId": "incident-postmortems",
+      "label": "历史事件与复盘",
+      "records": [
+        {
+          "recordId": "postmortem-principles-draft",
+          "classification": "internal",
+          "synthetic": true,
+          "summary": "候选原则：勇担责任、快速处理、真诚沟通、周密安排；优先通过风险准备避免危机发生。",
+          "permittedRoles": {
+            "discover_metadata": ["material_intake", "evidence_guard", "entity_matcher", "approval_guard", "leader"],
+            "read_excerpt": ["material_intake", "evidence_guard", "entity_matcher", "approval_guard", "leader"],
+            "curate_skill": ["human_skill_curator"]
+          },
+          "sourceBasis": "根据通话23:24—31:20构造，当前仍是案例知识，不是成熟Skill。"
+        }
+      ]
+    },
+    {
+      "collectionId": "skills-policies",
+      "label": "规则与Skill注册表",
+      "records": [
+        {
+          "recordId": "policy-agent-zero-authority",
+          "classification": "internal",
+          "synthetic": true,
+          "summary": "Agent可以准备事实、方案、冲突和执行清单，但不能批准退款、修改节目、发布公告或联系外部主体。",
+          "permittedRoles": {
+            "discover_metadata": ["material_intake", "evidence_guard", "entity_matcher", "approval_guard", "leader"],
+            "read_excerpt": ["material_intake", "evidence_guard", "entity_matcher", "approval_guard", "leader"],
+            "read_full": ["leader", "human_incident_commander", "human_skill_curator"]
+          },
+          "sourceBasis": "据场比赛安全边界。"
+        },
+        {
+          "recordId": "skill-candidate-artist-substitution",
+          "classification": "internal",
+          "synthetic": true,
+          "status": "candidate",
+          "summary": "替补候选必须同时核对艺术能力、本人意愿、经纪和邀请方许可、排练、编制、到场时间、传播声誉与批准权。",
+          "permittedRoles": {
+            "discover_metadata": ["evidence_guard", "entity_matcher", "leader", "human_skill_curator"],
+            "read_excerpt": ["evidence_guard", "entity_matcher", "leader", "human_skill_curator"],
+            "curate_skill": ["human_skill_curator"]
+          },
+          "sourceBasis": "从单个历史案例提炼，尚未达到成熟Skill晋升条件。"
+        }
+      ]
+    }
+  ],
+  "requiredDemoBehaviors": [
+    {
+      "behaviorId": "allowed-private-hit",
+      "role": "entity_matcher",
+      "recordId": "permission-visiting-artist-third-party",
+      "expected": "read_excerpt_allowed"
+    },
+    {
+      "behaviorId": "denied-private-read",
+      "role": "evidence_guard",
+      "recordId": "permission-visiting-artist-third-party",
+      "expected": "metadata_visible_content_denied_handoff_required"
+    },
+    {
+      "behaviorId": "hidden-record-invisible",
+      "role": "material_intake",
+      "recordId": "permission-visiting-artist-third-party",
+      "expected": "metadata_hidden_handoff_required"
+    },
+    {
+      "behaviorId": "no-agent-approval",
+      "role": "approval_guard",
+      "recordId": "authority-live-program-change",
+      "expected": "approval_denied_named_human_required"
+    }
+  ]
+}

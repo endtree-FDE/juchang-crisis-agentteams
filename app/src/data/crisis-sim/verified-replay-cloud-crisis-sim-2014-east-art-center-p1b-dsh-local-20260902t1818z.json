@@ -1,0 +1,389 @@
+{
+  "schema": "juchang-crisis-verified-replay@1",
+  "replayId": "verified-replay-cloud-crisis-sim-2014-east-art-center-p1b-dsh-local-20260902t1818z",
+  "frozenAt": "2026-09-02T18:38:20.702Z",
+  "readonly": true,
+  "source": {
+    "kind": "live_agent_run",
+    "dispatchId": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z",
+    "projectId": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z",
+    "changeRef": "crisis-sim-2014-east-art-center",
+    "decisionRunId": "p1b-dsh-local-20260902T1818Z",
+    "adapterRef": "none-dsh-local-session",
+    "exportedFrom": "runtime-evidence.json",
+    "dispatchProvided": true,
+    "evaluatorState": "ready_for_human_review"
+  },
+  "disclosure": "本文件回放自一次真实 Live Agent Run 的导出物，已通过 evaluateCloudAgentTeamsReceipt 校验（0 issue、可进入人工复核、四项外部影响计数为 0）并脱敏冻结。它不是协议模拟，也不是实时运行；文件只读，禁止修改。",
+  "validation": {
+    "evaluator": "evaluateCloudAgentTeamsReceipt（app/src/lib/admin/cloud-agentteams-contract.ts）",
+    "state": "ready_for_human_review",
+    "issueCount": 0,
+    "workerProgress": {
+      "effective": 4,
+      "received": 4,
+      "expected": 4
+    },
+    "counters": {
+      "productionWrites": 0,
+      "publicPublishes": 0,
+      "realRefunds": 0,
+      "externalMessages": 0
+    }
+  },
+  "desensitization": {
+    "rules": [
+      "email → [redacted:email]",
+      "Bearer token → [redacted:bearer]",
+      "sk- key → [redacted:key]"
+    ],
+    "redactionCount": 0
+  },
+  "replay": {
+    "schema": "juchang-cloud-runtime-evidence@1",
+    "provenance": {
+      "runtime": "dsh-local-session",
+      "cloudstudio": false,
+      "executor": "dsh-subagent-orchestration",
+      "statement": "本次运行由 DSH 本地会话编排：四个 Worker 与一个 Leader 均为同一会话内的真实子智能体模型调用，真实读取 preset/library 输入并产出交付物；未连接 CloudStudio、AgentTeams Controller、Matrix 或 TeamHarness。audit 事件记录的是会话内真实执行的生命周期检查操作，沿用 AgentTeams 语义命名；check_task 由 validate-receipts.mjs 真实执行，accept/complete 由 Leader 子智能体真实决策。dispatch.runtimeEnvironment 取值 cloudstudio 是合同常量，不代表本次运行位置。skillInvocations 记录 evidence_guard 岗真实执行确定性 Skill 核对器 artist-substitution-feasibility@0.1.0 的 trace（真实输出/包/权限清单哈希）。",
+      "inputs": [
+        "app/src/data/crisis-sim/2014-east-art-center.preset.json",
+        "app/src/data/crisis-sim/virtual-private-library.json"
+      ],
+      "externalWrites": "none"
+    },
+    "project": {
+      "project_id": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z",
+      "status": "completed",
+      "tasks": [
+        "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-01",
+        "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-02",
+        "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-03",
+        "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-04"
+      ]
+    },
+    "tasks": [
+      {
+        "task_id": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-01",
+        "status": "completed",
+        "result_status": "SUCCESS_WITH_NOTES"
+      },
+      {
+        "task_id": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-02",
+        "status": "completed",
+        "result_status": "SUCCESS_WITH_NOTES"
+      },
+      {
+        "task_id": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-03",
+        "status": "completed",
+        "result_status": "SUCCESS_WITH_NOTES"
+      },
+      {
+        "task_id": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-04",
+        "status": "completed",
+        "result_status": "SUCCESS_WITH_NOTES"
+      }
+    ],
+    "audit": {
+      "schema": "juchang-cloud-audit@1",
+      "dispatchId": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z",
+      "projectId": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z",
+      "events": [
+        {
+          "sequence": 1,
+          "operation": "check_task",
+          "taskId": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-01",
+          "at": "2026-09-02T18:32:55.454Z",
+          "success": true,
+          "effective": true,
+          "validationErrors": []
+        },
+        {
+          "sequence": 2,
+          "operation": "check_task",
+          "taskId": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-02",
+          "at": "2026-09-02T18:32:55.455Z",
+          "success": true,
+          "effective": true,
+          "validationErrors": []
+        },
+        {
+          "sequence": 3,
+          "operation": "check_task",
+          "taskId": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-03",
+          "at": "2026-09-02T18:32:55.456Z",
+          "success": true,
+          "effective": true,
+          "validationErrors": []
+        },
+        {
+          "sequence": 4,
+          "operation": "check_task",
+          "taskId": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-04",
+          "at": "2026-09-02T18:32:55.456Z",
+          "success": true,
+          "effective": true,
+          "validationErrors": []
+        },
+        {
+          "sequence": 5,
+          "operation": "accept_task_result",
+          "taskId": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-01",
+          "at": "2026-09-02T18:34:32.309Z",
+          "success": true
+        },
+        {
+          "sequence": 6,
+          "operation": "task_terminal_observed",
+          "taskId": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-01",
+          "at": "2026-09-02T18:34:38.229Z",
+          "success": true,
+          "status": "completed"
+        },
+        {
+          "sequence": 7,
+          "operation": "accept_task_result",
+          "taskId": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-02",
+          "at": "2026-09-02T18:34:43.479Z",
+          "success": true
+        },
+        {
+          "sequence": 8,
+          "operation": "task_terminal_observed",
+          "taskId": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-02",
+          "at": "2026-09-02T18:34:48.727Z",
+          "success": true,
+          "status": "completed"
+        },
+        {
+          "sequence": 9,
+          "operation": "accept_task_result",
+          "taskId": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-03",
+          "at": "2026-09-02T18:34:54.198Z",
+          "success": true
+        },
+        {
+          "sequence": 10,
+          "operation": "task_terminal_observed",
+          "taskId": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-03",
+          "at": "2026-09-02T18:34:58.988Z",
+          "success": true,
+          "status": "completed"
+        },
+        {
+          "sequence": 11,
+          "operation": "accept_task_result",
+          "taskId": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-04",
+          "at": "2026-09-02T18:35:04.066Z",
+          "success": true
+        },
+        {
+          "sequence": 12,
+          "operation": "task_terminal_observed",
+          "taskId": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-04",
+          "at": "2026-09-02T18:35:10.795Z",
+          "success": true,
+          "status": "completed"
+        },
+        {
+          "sequence": 13,
+          "operation": "complete_project",
+          "at": "2026-09-02T18:35:16.333Z",
+          "success": true,
+          "status": "completed"
+        },
+        {
+          "sequence": 14,
+          "operation": "project_terminal_observed",
+          "at": "2026-09-02T18:35:40.494Z",
+          "success": true,
+          "status": "completed"
+        }
+      ]
+    },
+    "skillInvocations": [
+      {
+        "taskId": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-02",
+        "role": "evidence_guard",
+        "skillId": "artist-substitution-feasibility",
+        "status": "succeeded",
+        "contract": "juchang-skill-checklist-verdict@1",
+        "version": "0.1.0",
+        "digest": "e0ed313edf15cb090ff401ffe533924bd6cd078ea0aac9d5ce25b5bd649e0cb8",
+        "claimableAsFreshEvidence": true,
+        "bundleRef": "scripts/crisis-sim/skills/artist-substitution-feasibility/",
+        "authorityRef": "scripts/crisis-sim/skills/artist-substitution-feasibility/authority.json",
+        "bundleSha256": "e3927d4baf0fe64a5ea1901ab2c750096b2de108292eed3e76e2ad71ff2742ef",
+        "authoritySha256": "b7f403cc844a24f0563630c274d6450c0bcbebb7628308eb5c71214e9cd0218e",
+        "runtime": "dsh-local-session",
+        "executor": "evidence_guard subagent via pwsh: node scripts/crisis-sim/skills/artist-substitution-feasibility/check.mjs",
+        "invokedAt": "2026-09-02T18:25:07.786Z",
+        "outputPath": "output/crisis-sim/run-p1b-dsh-local-20260902T1818Z/tasks/cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-02/skill-verdict.json",
+        "inputSha256": [
+          {
+            "kind": "preset",
+            "path": "app/src/data/crisis-sim/2014-east-art-center.preset.json",
+            "sha256": "8c16e14cebbb1e983b1e396c828374db725113582bc54b5c46afb90878394716"
+          },
+          {
+            "kind": "library",
+            "path": "app/src/data/crisis-sim/virtual-private-library.json",
+            "sha256": "e3bf1c88f407026b22a6ba285d39752917f1a870ae7d4b66f91f8201260426e6"
+          }
+        ],
+        "overallVerdict": "substitution_not_feasible_now",
+        "counts": {
+          "holds": 1,
+          "fails": 5,
+          "unknown": 3
+        },
+        "note": "真实执行的确定性核对器（零模型调用）；verdict 输出哈希、技能包哈希、权限清单哈希均在组装时从真实文件重算。"
+      }
+    ],
+    "receipt": {
+      "schema": "juchang-cloud-receipt@1",
+      "dispatchId": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z",
+      "changeRef": "crisis-sim-2014-east-art-center",
+      "projectRef": "zhuantang-crisis-sim",
+      "status": "completed",
+      "workers": [
+        {
+          "taskId": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-01",
+          "role": "material_intake",
+          "status": "completed",
+          "summary": "已按权限矩阵完成现场事实与时间线梳理：确认钢琴家弗雷尔当晚无法上台、受影响曲目为贝多芬《皇帝》协奏曲、19:30 开演；登记医嘱 20h/24h 冲突并给出'当晚禁止上台、小时数保持冲突'的安全结论；距 17:00 最晚决定（口述投影、中置信）剩 45 分钟；闭源库 10 条记录对本岗不可见，已登记移交。",
+          "deliverables": [
+            "tasks/cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-01/minimum-viable-truth.md",
+            "tasks/cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-01/fact-conflict-register.md",
+            "tasks/cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-01/incident-timeline.md"
+          ],
+          "effective": true,
+          "conclusion": "HUMAN_REVIEW",
+          "factCount": 11,
+          "conflictCount": 4,
+          "unknownFields": [
+            "医生具体诊断与健康细节（受隐私保护，不追索）",
+            "替补钢琴家人选、本人意愿与到场可行性",
+            "卡瓦科斯本人意愿、当前位置与临时档期（相关闭源记录对本岗不可见）",
+            "指挥夏伊与乐团对各方案的当场意见",
+            "上海音乐厅（原邀请方）是否许可（相关闭源记录对本岗不可见）",
+            "具名经济授权人身份与退款批准权限（authority-live-program-change 对本岗不可见）",
+            "合同条款具体内容（contract-soloist-unavailable 对本岗不可见）",
+            "17:00 截止是否具有更权威来源确认",
+            "18:30/18:45 场馆流程节点的真实时刻（当前仅为合成假设）",
+            "late-orchestra-written-confirm 注入项内容在当前 checkpoint 尚未到达本岗"
+          ],
+          "sourceReceiptSha256": "8ca4962f3d57f78d7129eb6d77a81ca76b16647353bc0841c881f4346d15c3ea"
+        },
+        {
+          "taskId": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-02",
+          "role": "evidence_guard",
+          "status": "completed",
+          "summary": "已真实执行 Skill 核对器 artist-substitution-feasibility@0.1.0（exit=0，落盘 skill-verdict.json），overallVerdict 为 substitution_not_feasible_now（holds 1 / fails 5 / unknown 3）：方案 A 无具名替补候选、方案 B 许可未取得且未合排叠加直播永久记录风险、方案 C 马勒七编制缺员无法召回，三条替代路线当前均有硬阻断；方案 D（缩短节目+半额退款）艺术/技术可行（fallback-route-viable=holds）但经济授权人未确认，是唯一兜底路线。对 permission-visiting-artist-third-party 本岗仅 discover_metadata，内容未授权，已登记移交 entity_matcher/leader。",
+          "deliverables": [
+            "tasks/cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-02/skill-verdict.json",
+            "tasks/cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-02/option-feasibility-matrix.md",
+            "tasks/cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-02/hard-blocker-register.md",
+            "tasks/cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-02/confirmation-deadlines.md"
+          ],
+          "effective": true,
+          "conclusion": "HUMAN_REVIEW",
+          "factCount": 9,
+          "conflictCount": 2,
+          "unknownFields": [
+            "替补钢琴家任何具名人选及其曲目能力、意愿、经纪确认（方案 A 全部条件）",
+            "卡瓦科斯本人意愿、当前地点与临时档期（library:candidate-kavakos-shanghai 明示需现场确认，合成记录非实时证明）",
+            "permission-visiting-artist-third-party 记录正文内容（本岗仅 discover_metadata，移交 entity_matcher/leader）",
+            "指挥夏伊与乐团对方案 B/C 的当场意见",
+            "具名经济授权人身份与退款批准权限（authority-live-program-change 对本岗不可见）",
+            "马勒七精确编制缺口（须以真实总谱与乐团编制表为准；现有为口述约数）",
+            "17:00 决定截止是否具有更权威来源确认",
+            "18:30 入场与 18:45 信号锁定的真实时刻（当前为合成假设 assumed）",
+            "舞台技术侧对节目调整的可行性（无任何材料）",
+            "退款渠道与一个月窗口的当前可执行细节（历史结果可参照，当前执行未确认）",
+            "late-orchestra-written-confirm 注入事实是否代表真实乐团立场（synthetic，到达后须人判断）"
+          ],
+          "sourceReceiptSha256": "8fe653b3ec88b29e02265b3e579416f39c2ecdacfd291e0e6166f6262d631011"
+        },
+        {
+          "taskId": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-03",
+          "role": "entity_matcher",
+          "status": "completed",
+          "summary": "已完成八方干系人关系图、授权链图与合同许可登记：东艺-观众、合同链、独奏家、指挥-乐团为唯一匹配；卡瓦科斯-上海音乐厅为唯一匹配的邀请关系但许可未取得；合作史为歧义、替补钢琴家与具名经济授权人无匹配；board 状态 oral_testimony_requires_further_verification 如实呈现；节目变更/退款/公开说明三类动作结论均为需具名人类、Agent 零授权；已演示 allowed-private-hit（对 permission-visiting-artist-third-party 的 read_excerpt 被允许），6 条无权限记录未读取并登记移交；全程每条关系标注'关系≠许可'。",
+          "deliverables": [
+            "tasks/cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-03/stakeholder-graph.md",
+            "tasks/cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-03/authority-graph.md",
+            "tasks/cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-03/contract-and-permission-register.md"
+          ],
+          "effective": true,
+          "conclusion": "HUMAN_REVIEW",
+          "factCount": 13,
+          "conflictCount": 4,
+          "unknownFields": [
+            "具名经济授权人身份（board 状态 oral_testimony_requires_further_verification）",
+            "替补钢琴家人选、本人意愿与经纪确认（无匹配，待具名）",
+            "卡瓦科斯本人意愿、当前位置与临时档期",
+            "上海音乐厅（原邀请方）是否许可卡瓦科斯转场（许可未取得）",
+            "夏伊与乐团对无合排门德尔松/补演马勒的当场意见",
+            "独奏家缺席合同的具体经济责任条款（需签署文本+人工解释）",
+            "17:00 决定截止的权威确认（口述投影 medium 置信，承上游）",
+            "late-orchestra-written-confirm 注入项在当前 checkpoint 尚未到达本岗，其书面确认签发主体待具名人类确定",
+            "6 条未授权闭源记录内容（program-2014-03-15、repertoire-mahler-seven-requirements、roster-current-night、broadcast-lock-state、audience-impact-snapshot、joint-facing-communication-principle）"
+          ],
+          "sourceReceiptSha256": "264732d0456f1d31132a09a946c05761419c1a7f4a7d4f801fc550fa90030b24"
+        },
+        {
+          "taskId": "cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-04",
+          "role": "approval_guard",
+          "status": "completed",
+          "summary": "已完成观众影响简报、沟通风险审查、执行清单候选与人工批准边界四份交付物：观众损失按现场满座/外地群体/多地直播受众三层定损，核心曲目取消属稀缺体验高损失；口径确立准确/及时/共同面对/健康最小披露四原则并列七项禁忌；退款窗口、客服、现场秩序共 12 项准备事项全部标注'需具名人类批准后方可执行'；六个禁止动作逐项保持未授权，已演示对 authority-live-program-change 的 approve 拒绝（approval_denied_named_human_required）；安全计数四项全零，零越权读取。",
+          "deliverables": [
+            "tasks/cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-04/audience-impact-brief.md",
+            "tasks/cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-04/communication-risk-review.md",
+            "tasks/cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-04/execution-checklist-candidate.md",
+            "tasks/cloud_crisis-sim-2014-east-art-center_p1b-dsh-local-20260902t1818z-04/human-approval-boundary.md"
+          ],
+          "effective": true,
+          "conclusion": "HUMAN_REVIEW",
+          "factCount": 10,
+          "conflictCount": 3,
+          "unknownFields": [
+            "具名经济授权人身份（board 为 oral_testimony_requires_further_verification，承 Task-03）",
+            "外地观众占比与附加成本规模（仅合成快照，无订单级数据）",
+            "多地直播受众的实际覆盖名单（preset:fact-broadcast 为 partially_verified）",
+            "17:00 真实决定窗口与 18:30/18:45 真实时刻（medium/assumed 置信，承上游）",
+            "permission-visiting-artist-third-party 记录内容（本岗连元数据均不可见，引用 Task-03 摘录结论）",
+            "contract-soloist-unavailable 记录内容（本岗仅 discover_metadata，内容未授权）",
+            "authority-live-program-change 的 read_full 内容（仅 human_incident_commander）",
+            "退款渠道与窗口的当前可执行细节（历史结果可参照，当前执行未确认，承 Task-02）",
+            "客服人力与场馆动线的真实容量数据（无任何材料）",
+            "late-orchestra-written-confirm 注入事实是否代表真实乐团立场（synthetic，到达后须人判断，承 Task-02）"
+          ],
+          "sourceReceiptSha256": "0a3bb7b28df7c68d63bf28cb02d001f1a1feae7d6c47201c9eaadd6b15f45b3b"
+        }
+      ],
+      "completeProject": {
+        "attempted": true,
+        "success": true,
+        "status": "completed"
+      },
+      "leader": {
+        "status": "READY_FOR_HUMAN_REVIEW",
+        "summary": "四岗全部完成并经 check_task 校验与 Leader 逐任务验收：material_intake 交付最小可信事实集、冲突登记与事件时间线；evidence_guard 真实执行 Skill 核对器 artist-substitution-feasibility@0.1.0，overallVerdict=substitution_not_feasible_now（holds1/fails5/unknown3）——方案 A 无具名候选、方案 B 许可未取得且未合排叠加直播永久记录风险、方案 C 编制硬阻断，三条替代路线当前均不成立；entity_matcher 完成八方干系人关系图与授权链，确立'关系≠许可'并确认具名经济授权人无匹配（board 口述待核实）；approval_guard 完成观众定损、口径四原则与七项禁忌、12 项候选执行清单与人工批准边界，approve 拒绝演示如实记录。总体建议：以方案 D（缩短节目+退票面 50%）为唯一可推进主线进入'准备完成/待批准'，请人类指挥官第一时间具名确认经济授权人并核实 17:00 真实决定窗口（medium 置信口述投影）；方案 B 维持'当前阻断/人工待定'，三项具名批准缺一即不落地；方案 A、C 关闭并记录阻断。迟到事实 late-orchestra-written-confirm 按 arrivesAfterCheckpoint=human_decision_brief 登记未采信。项目停在人工复核（READY_FOR_HUMAN_REVIEW），全程零生产写入、零公开发布、零真实退款、零外发消息，安全计数四项为零。"
+      },
+      "counters": {
+        "productionWrites": 0,
+        "publicPublishes": 0,
+        "realRefunds": 0,
+        "externalMessages": 0
+      },
+      "receivedAt": "2026-09-02T18:38:01.332Z"
+    }
+  },
+  "digests": {
+    "rawExportSha256": "18c1fb5bcef07fb6382648e89ac13dafcbca50899d14c015de740e148662d786",
+    "dispatchSha256": "96098b3c74eeed56a5ca08e7c6935e6078aba77bbb648c9bc9371c59b1341864",
+    "receiptSha256": "38159020b0c5f46d8bd293d7ac7dc42d880ac31eb1bee8a99805c67d2a6b40a5",
+    "fixtureSha256": "bbdcad403506d83212a7be278cc796dae07e648eb72ac33f997fbe1e17a66f5d"
+  }
+}
